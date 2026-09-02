@@ -1502,6 +1502,7 @@
     actionCounts[sceneId] = (actionCounts[sceneId] || 0) + 1;
     const ac = actionCounts[sceneId];
     const actionId = `act-${sceneId}-${ac}`;
+    const actionToolOpts = TOOLS.map(t => `<option value="${t}">${t}</option>`).join('');
 
     const div = document.createElement('div');
     div.className = 'action-block';
@@ -1521,9 +1522,44 @@
           <label>Surface / area</label>
           <input type="text" class="action-surface" placeholder="e.g. Shower head, tap, tile">
         </div>
+      </div>
+      <label class="override-toggle" style="margin-top:8px;">
+        <input type="checkbox" id="action-override-cb-${actionId}" onchange="toggleActionOverride('${actionId}')">
+        Override product/tool for this action
+      </label>
+      <div class="override-body" id="action-override-body-${actionId}">
+        <div class="field-grid col-2" style="gap:8px;margin-top:8px;">
+          <div class="field">
+            <label style="font-size:11px;">Product</label>
+            <div class="search-wrap">
+              <input type="text" class="action-product-input" placeholder="Search product..." autocomplete="off"
+                oninput="filterActionProductDropdown(this)"
+                onfocus="showDropdown(this.closest('.search-wrap'))"
+                onblur="hideDropdown(this.closest('.search-wrap'))">
+              <div class="search-dropdown"></div>
+            </div>
+          </div>
+          <div class="field">
+            <label style="font-size:11px;">Product SKU</label>
+            <input type="text" class="action-sku" placeholder="Auto-fills or type manually">
+          </div>
+        </div>
+        <div class="field" style="margin-top:8px;">
+          <label style="font-size:11px;">Tool</label>
+          <select class="action-tool">
+            <option value="">Select tool...</option>
+            ${actionToolOpts}
+          </select>
+        </div>
       </div>`;
 
     document.getElementById('actions-' + sceneId).appendChild(div);
+  }
+
+  function toggleActionOverride(actionId) {
+    const cb = document.getElementById('action-override-cb-' + actionId);
+    const body = document.getElementById('action-override-body-' + actionId);
+    if (body) body.classList.toggle('visible', cb.checked);
   }
 
   /* ─── Before / After cleaning ─── */
@@ -1608,6 +1644,27 @@
     document.getElementById(hiddenId).value = val;
     document.getElementById(listId).style.display = 'none';
   }
+  function filterActionProductDropdown(input) {
+    const wrap = input.closest('.search-wrap');
+    const list = wrap.querySelector('.search-dropdown');
+    const q = input.value.toLowerCase().trim();
+    const filtered = q ? PRODUCTS.filter(p => p.name.toLowerCase().includes(q) || p.sku.toLowerCase().includes(q)).slice(0,30) : [];
+    list.innerHTML = filtered.map(p =>
+      `<div class="search-item" onmousedown="selectActionProduct(this,'${p.name.replace(/'/g,"\\'")}','${p.sku}')">${p.name}<span style="color:var(--muted);font-size:11px;margin-left:8px;">${p.sku}</span></div>`
+    ).join('');
+    list.style.display = filtered.length ? 'block' : 'none';
+  }
+  function selectActionProduct(el, name, sku) {
+    const wrap = el.closest('.search-wrap');
+    wrap.querySelector('.action-product-input').value = name;
+    wrap.querySelector('.search-dropdown').style.display = 'none';
+    const actionBlock = wrap.closest('.action-block');
+    if (actionBlock && sku) {
+      const skuField = actionBlock.querySelector('.action-sku');
+      if (skuField) skuField.value = sku;
+    }
+  }
+
   function filterProductDropdown(input) {
     const wrap = input.closest('.search-wrap');
     const list = wrap.querySelector('.search-dropdown');
@@ -1660,6 +1717,9 @@
           actions.push({
             description: ab.querySelector('.action-desc')?.value || '',
             surface: ab.querySelector('.action-surface')?.value || '',
+            productOverride: ab.querySelector('.action-product-input')?.value || '',
+            skuOverride: ab.querySelector('.action-sku')?.value || '',
+            toolOverride: ab.querySelector('.action-tool')?.value || '',
           });
         });
 
