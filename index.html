@@ -1138,7 +1138,7 @@
         </div>
 
         <div class="field">
-          <label>Additional notes</label>
+          <label id="additional-notes-label" for="f-notes">Additional notes</label>
           <textarea id="f-notes" placeholder="Anything else the production team should know"></textarea>
         </div>
         <div class="field">
@@ -3231,6 +3231,8 @@
     document.getElementById('f-department').value=lastHospitalityDepartment;
     document.getElementById('brief-heading-fields').classList.toggle('no-department',!isHospitality);
     const isEhs=next==='EHS';
+    document.getElementById('additional-notes-label').textContent=isEhs?'Sources':'Additional notes';
+    document.getElementById('f-notes').placeholder=isEhs?'Source links, reference documents, or standards for this brief':'Anything else the production team should know';
     updateBriefTitleControl();
     ['cleaning-character-section','cleaning-environments-section','cleaning-before-after-section'].forEach(id=>document.getElementById(id).hidden=isEhs);
     document.getElementById('ehs-section').hidden=!isEhs;
