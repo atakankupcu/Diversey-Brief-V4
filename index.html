@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+  // Standalone GitHub Pages distribution; hosted form uses its own same-deployment RPC.
+  window.DIVERSEY_CONFIG = {
+    endpoint: "https://script.google.com/macros/s/AKfycbwYdI0kaQFet2fKh5ZhXcHcSk3WQSc01FZiSpC3sDPL4tug38kZdatJm0SIsfi6JsQU/exec",
+    preview: window.location.origin !== "https://atakankupcu.github.io"
+  };
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Diversey — Production Brief</title>
@@ -9,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+<!-- Upload widget is disabled in this standalone review. -->
 <script>UPLOADCARE_PUBLIC_KEY = '8bbf74f0c2d1c5bebac5'; UPLOADCARE_LOCALE = 'en';</script>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -918,6 +925,50 @@
     .section-body { padding: 18px; }
   }
 </style>
+<style>
+.brief-types{grid-template-columns:repeat(4,minmax(0,1fr))}.type-kitchen{background:linear-gradient(135deg,#d7e9dd,#f0ebcf)}
+.scene-mode{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0 16px;color:var(--muted);font-size:12px}.scene-mode>div{display:flex;border:1px solid var(--border);border-radius:8px;padding:3px;background:#f2f6f8}.scene-mode button{border:0;border-radius:5px;padding:8px 15px;background:transparent;color:var(--navy);cursor:pointer;font:inherit}.scene-mode button[aria-pressed=true]{background:var(--navy);color:white}.tool-row{display:grid;grid-template-columns:minmax(130px,1fr) minmax(180px,2fr) auto auto;gap:10px;align-items:start;padding:12px;background:var(--surface-2);border:1px solid var(--border);border-radius:8px;margin:10px 0}.tool-row textarea{min-height:68px}.tools-editor{margin:12px 0}.action-details-field{margin:12px 0}.action-details{min-height:110px}.scene-theory>.field{margin:12px 0}.scene-theory textarea{min-height:120px}[hidden]{display:none!important}.review-banner{padding:12px 20px;background:#eaf4f0;border-bottom:1px solid #c7ded5;color:#164b42;text-align:center;font:500 12px Inter,sans-serif}
+@media(max-width:720px){.brief-types{grid-template-columns:repeat(2,minmax(0,1fr))}.tool-row{grid-template-columns:1fr auto}.tool-row>.field{grid-column:1}.tool-row>.btn-remove{grid-column:2;grid-row:1}.scene-mode{flex-wrap:wrap}}
+</style><style>
+  :root{color-scheme:light}
+  input:not([type]), input[type="text"],input[type="email"],input[type="date"],select,textarea{background-color:#fff;color:#082634;color-scheme:light}
+  .action-resources{display:grid;gap:14px;margin:16px 0 0;padding-top:14px;border-top:1px solid var(--hairline)}
+  .resource-title{font:600 11px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+  .action-resources .tools-editor{margin:0;padding:0;border:0;background:transparent}
+  .action-ehs select,.theory-section .section-title{display:block;margin-top:7px}
+  .action-ehs select,.theory-section input{text-transform:none;letter-spacing:normal}
+  .product-row{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr) auto;gap:10px;align-items:start;margin-bottom:8px}
+  .product-row>.btn-remove{margin-top:22px}
+  .theory-section{display:grid;gap:12px}.theory-section .action-head{margin:0}.scene-theory .theory-section textarea{margin:0}
+  .sheet-outline{padding:16px 20px;border:1px solid var(--hairline);border-radius:10px;background:white;margin:18px 0}
+  .sheet-outline summary{cursor:pointer;font:600 14px var(--sans);color:var(--navy)}.sheet-outline p{margin:12px 0}
+  .outline-scroll{overflow-x:auto}.sheet-outline table{border-collapse:collapse;width:100%;min-width:420px;text-align:left;font-size:13px}
+  .sheet-outline th,.sheet-outline td{border-bottom:1px solid var(--hairline);padding:8px}.sheet-outline th{background:#e9f3f1}
+  @media(max-width:580px){.product-row{grid-template-columns:minmax(0,1fr) auto}.product-row>.field{grid-column:1}.product-row>.btn-remove{grid-column:2;grid-row:1}}
+</style>
+
+<style>
+/* Card palette: swap these three tokens to revise the hierarchy. */
+:root{--brief-environment:#edf5fa;--brief-scene:#eff7f3;--brief-action:#fcf8ef}
+.env-block,.env-block>.env-head{background:var(--brief-environment)}.scene-block{background:var(--brief-scene)}
+.action-block,.ehs-action{background:var(--brief-action)}.action-resources .tool-row{background:#fff}
+input[type="checkbox"]{appearance:none;-webkit-appearance:none;display:inline-block;box-sizing:border-box;width:17px!important;height:17px!important;flex:0 0 17px;margin:0;padding:0;border:1.5px solid #80969d;border-radius:4px;background:#fff;box-shadow:none;vertical-align:middle;cursor:pointer;color-scheme:light}
+input[type="checkbox"]:checked{border-color:#186a5b;background:#186a5b url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='m3.4 8.1 3 3 6-6.2' stroke='white' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/15px no-repeat}
+input[type="checkbox"]:focus-visible,.fold-toggle:focus-visible,.ref-add:focus-visible{outline:2px solid #19695d;outline-offset:3px}
+@media(forced-colors:active){input[type="checkbox"]{appearance:auto}}
+.fold-head{display:flex;align-items:center;gap:8px}.fold-toggle{flex:1;min-width:0;display:flex;align-items:center;gap:9px;flex-wrap:wrap;text-align:left;background:transparent;color:var(--navy);font:inherit;border:0;cursor:pointer;padding:5px 0}
+.fold-arrow{width:8px;height:8px;border:solid currentColor;border-width:0 1.6px 1.6px 0;transform:rotate(45deg);margin:0 4px 3px 1px}
+.fold-toggle[aria-expanded=false] .fold-arrow{transform:rotate(-45deg);margin-bottom:0}
+.fold-number{font:600 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#286054}.fold-title{font:600 14px var(--sans);overflow-wrap:anywhere}.folded>.fold-head{border-bottom:0;margin-bottom:0;padding-bottom:0}.env-block.folded>.fold-head{padding-bottom:13px}
+.theory-section>.fold-content{display:grid;gap:12px}.fold-content[hidden]{display:none!important}
+.scene-cast{margin:14px 0;padding:13px;border:1px solid var(--hairline);border-radius:8px;background:rgba(255,255,255,.55)}
+.cast-buttons{display:flex;gap:16px;flex-wrap:wrap}.cast-index{font:600 11px var(--mono);color:#315c56}
+.ref-add{background:#fff;border:1px solid #cadad6;border-radius:6px;color:#245a51;padding:5px 8px;font:600 11px var(--sans);cursor:pointer;white-space:nowrap}
+.ref-list:not(:empty){display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px}.ref-file{display:flex;gap:7px;align-items:center;max-width:100%;border:1px solid #d3dedb;border-radius:6px;background:#fff;padding:4px 7px}.ref-file img{width:38px;height:38px;object-fit:cover;border-radius:3px}.ref-file strong,.ref-file small{display:block;overflow-wrap:anywhere}.ref-file strong{font:600 11px var(--mono);color:#245b51}.ref-file small{font-size:11px;color:#57696d}
+.ehs-action>.fold-content>.field,.cast-person>.field{margin-top:10px}.wearers:empty{display:none}.eq-base,.eq-split{margin:8px 0}.general-files:empty{display:none}
+.fold-kind{color:#49625d;font:500 10px var(--sans);background:#ffffffa8;border:1px solid #d9e1dc;border-radius:4px;padding:2px 5px}
+</style>
+
 </head>
 <body class="intro-active">
 
@@ -951,7 +1002,7 @@
 
 <div class="page">
   <div class="page-header">
-    <div class="eyebrow">Production Brief / v4.1 preview</div>
+    <div class="eyebrow">Production Brief / v4.6</div>
     <h1>Training video <em>brief</em> generator</h1>
     <p>Choose a brief type, describe the training, and build your scenes.</p>
     <div class="meta-row">
@@ -968,6 +1019,7 @@
       <button type="button" class="brief-type type-hospitality" data-brief-type="Hospitality" aria-pressed="true" onclick="selectMainBriefType('Hospitality')"><strong>Hospitality<svg class="brief-type-decor brief-type-stars" viewBox="0 0 166 30" aria-hidden="true" focusable="false" fill="currentColor"><polygon points="15,1 19.1,10.3 29.2,11.3 21.6,18 23.8,28 15,22.9 6.2,28 8.4,18 0.8,11.3 10.9,10.3" transform="translate(0 0)"/><polygon points="15,1 19.1,10.3 29.2,11.3 21.6,18 23.8,28 15,22.9 6.2,28 8.4,18 0.8,11.3 10.9,10.3" transform="translate(34 0)"/><polygon points="15,1 19.1,10.3 29.2,11.3 21.6,18 23.8,28 15,22.9 6.2,28 8.4,18 0.8,11.3 10.9,10.3" transform="translate(68 0)"/><polygon points="15,1 19.1,10.3 29.2,11.3 21.6,18 23.8,28 15,22.9 6.2,28 8.4,18 0.8,11.3 10.9,10.3" transform="translate(102 0)"/><polygon points="15,1 19.1,10.3 29.2,11.3 21.6,18 23.8,28 15,22.9 6.2,28 8.4,18 0.8,11.3 10.9,10.3" transform="translate(136 0)"/></svg></strong><small>Hotels, departments &amp; guest spaces</small></button>
       <button type="button" class="brief-type type-healthcare" data-brief-type="Healthcare" aria-pressed="false" onclick="selectMainBriefType('Healthcare')"><svg class="brief-type-decor brief-type-medical" viewBox="0 0 72 112" aria-hidden="true" focusable="false" fill="none"><path d="M36 10V103" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/><circle cx="36" cy="9" r="5" fill="currentColor"/><path d="M47 21C63 26 59 39 40 43C18 47 15 60 35 65C54 70 51 82 35 86C25 89 25 96 31 101" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><path d="M45 15C38 14 34 18 36 23C39 28 49 29 52 24C54 20 49 17 45 15Z" fill="currentColor"/></svg><strong>Healthcare</strong><small>Hospitals, clinics &amp; care environments</small></button>
       <button type="button" class="brief-type type-ehs" data-brief-type="EHS" aria-pressed="false" onclick="selectMainBriefType('EHS')"><span class="brief-type-decor brief-type-tape" aria-hidden="true"></span><strong>EHS</strong><small>Hazards, safe behaviours &amp; workplace training</small></button>
+    <button type="button" class="brief-type type-kitchen" data-brief-type="Industrial Kitchen Hygiene" aria-pressed="false" onclick="selectMainBriefType('Industrial Kitchen Hygiene')"><strong>Industrial Kitchen Hygiene</strong><small>Endüstriyel Mutfak Hijyeni Eğitimi</small></button>
     </div>
     <p class="hint">Switch types at any time. Your entries stay available while this page remains open.</p>
   </div>
@@ -1070,7 +1122,7 @@
   <div class="section" id="cleaning-environments-section">
     <div class="section-head"><div class="num">3</div><h2>Environments &amp; scenes</h2><span class="step-label">Step 3 / 6</span></div>
     <div class="section-body">
-      <p class="hint" style="margin-bottom:14px;">Each environment is a location. Each scene is a task within that environment. Each action is a specific step within a scene.</p>
+      <p class="hint" style="margin-bottom:14px;">Give each scene a title. Use actions for practical steps or sections for theory. Within a scene, a new action starts with the previous action’s products, tools and EHS settings; edit them as needed.</p>
       <div id="env-list"></div>
       <button class="btn-ghost" onclick="addEnv()">+ Add environment</button>
     </div>
@@ -1079,7 +1131,7 @@
   <div class="section" id="ehs-section" hidden>
     <div class="section-head"><div class="num">2</div><h2>EHS scenes</h2><span class="step-label">Step 2 / 4</span></div>
     <div class="section-body">
-      <p class="hint" style="margin-bottom:16px">Set the environment and characters for each scene, then add Regular or Negative / Positive actions in the order they should appear.</p>
+      <p class="hint" style="margin-bottom:16px">Choose the people or items for each scene, then add practical actions or theoretical sections. Specify protective equipment where the action calls for it.</p>
       <div id="ehs-scenes"></div>
       <button type="button" class="btn-ghost" onclick="addEhsScene()">+ Add scene</button>
     </div>
@@ -1115,14 +1167,8 @@
       </div>
     </div>
     <div class="section-body">
-      <p class="hint" style="margin-bottom:12px;">Upload reference photos, sketches or visuals. Links are automatically saved with the brief.</p>
-      <div class="photo-upload-wrap">
-        <input type="hidden" role="uploadcare-uploader" id="uc-uploader"
-          data-multiple="true"
-          data-preview-step="true"
-          data-clearable="true">
-        <div id="uc-file-list" class="photo-grid" style="margin-top:10px;"></div>
-      </div>
+      <p class="hint">Add references for the whole brief here. Use + Reference on a scene or action for a specific shot.</p>
+      <div class="photo-upload-wrap" id="brief-references"><div class="general-toolbar"></div><div class="general-files"></div></div>
     </div>
   </div>
 
@@ -1149,17 +1195,24 @@
     </div>
   </div>
 
+  <details class="sheet-outline" id="sheet-outline" ontoggle="if(this.open)refreshOutline()">
+    <summary>Preview sheet rows</summary>
+    <p class="hint">Scene headers have their own row. Actions and sections appear underneath in brief order.</p>
+    <div class="outline-scroll"><table><thead><tr><th>Row</th><th>Scene title</th><th>Action title</th><th>Section title</th></tr></thead><tbody></tbody></table></div>
+  </details>
+
   <!-- Submit -->
   <div class="submit-area">
     <div class="submit-info">
       <strong>Ready to submit?</strong>
+      <a id="va-local-live" hidden target="_blank" rel="noopener" href="https://script.google.com/macros/s/AKfycbwYdI0kaQFet2fKh5ZhXcHcSk3WQSc01FZiSpC3sDPL4tug38kZdatJm0SIsfi6JsQU/exec">Open the live form to submit</a>
     </div>
     <button class="btn-submit" id="submit-btn" onclick="submitForm()">Submit your brief</button>
   </div>
 
   <div class="page-footer">
     <span>Diversey Value Academy · Production tooling</span>
-    <span>Brief Generator v4.1 · Preview</span>
+    <span>Brief Generator v4.6</span>
   </div>
 </div>
 
@@ -1175,21 +1228,25 @@
   </div>
 </div>
 
-<script>
-  /*DIVERSEY_RUNTIME_CONFIG*/
-  // Live submission to the deployed Engine 2.2 (cleaning v5 / EHS v6).
-  // Preserve the existing deployment URL when publishing on GitHub Pages.
+<script id="va-brief-app">
+  // HTML 4.6 uses the matching Apps Script deployment.
   // Apps Script supplies these values automatically when hosting this page.
-  const FORM_CONFIG = window.DIVERSEY_CONFIG || { preview: false, endpoint: 'https://script.google.com/macros/s/AKfycbxHflVqbhMNlf1oIFEdwjZD1H-z5VYk8AndiGMbCSiRLoiPediRBGMAD6jxnX3mJDQb/exec' };
+  const FORM_CONFIG = window.DIVERSEY_CONFIG || {preview:true};
   const WEBHOOK_URL = FORM_CONFIG.endpoint || '';
   const PREVIEW_MODE = FORM_CONFIG.preview !== false;
+  if (PREVIEW_MODE) {
+    document.getElementById('va-local-live').hidden=false;
+    document.querySelector('.submit-info strong').textContent='Local preview';
+    document.getElementById('submit-btn').disabled=true;
+    document.getElementById('submit-btn').textContent='Preview only';
+  }
   let pendingSubmission = null;
 
 
   let envCount = 0;
   let sceneCounts = {};
   let actionCounts = {};
-  let selectedGender = '';
+
 
 
   const TOOLS = ['Microfiber cloth','Microfiber mop','Flat mop','String mop','Spray bottle','Trigger spray bottle','Bucket','Double bucket & wringer','Squeegee','Floor scrubber','Scrub brush','Toilet brush','Trolley','Vacuum cleaner','Steam cleaner','Sponge','Scrub pad','Window washer','Other'];
@@ -1459,8 +1516,12 @@
   }
 };
 
-  const roleDrafts = {};
-  function cleaningProfile(type = briefType) { return CLEANING_PROFILES[type] || CLEANING_PROFILES.Hospitality; }
+
+  const roleDrafts = Object.create(null);
+  function cleaningProfile(type = briefType) {
+    if(type==='Industrial Kitchen Hygiene') return {roles:['Kitchen steward','Kitchen hygiene operative','Chef','Food handler','Other'],locations:['Commercial kitchen','Dishwashing area','Food preparation area','Cold storage','Dry storage','Other'],roleExample:'Specify kitchen role',environmentExample:'e.g. A commercial kitchen with stainless steel prep counters',sceneExample:'e.g. Clean a food preparation surface'};
+    return CLEANING_PROFILES[type] || CLEANING_PROFILES.Hospitality;
+  }
   function roleOptions() { return cleaningProfile().roles; }
   function updateRoleControl() {
     const profile = cleaningProfile();
@@ -1472,6 +1533,8 @@
     toggleRoleOther();
     document.getElementById('f-role-other').value = draft.other;
     document.getElementById('f-role-other').placeholder = profile.roleExample;
+    selectGender(draft.gender || '');
+    document.getElementById('f-uniform').value=draft.uniform || '';
   }
   function toggleOverrideRoleOther(sceneId) {
     const show = document.getElementById('override-role-'+sceneId).value === 'Other';
@@ -1489,7 +1552,6 @@
   }
 
   function selectGender(gender) {
-    selectedGender = gender;
     document.getElementById('f-gender').value = gender;
     document.querySelectorAll('.char-card').forEach(c => c.classList.remove('selected'));
     document.getElementById('gender-' + gender)?.classList.add('selected');
@@ -1590,18 +1652,13 @@
       </div>`;
 
     document.getElementById('env-list').appendChild(div);
-    addScene(id); // auto-add first scene
+    foldCard(div,'Environment');addScene(id);updateCards();
   }
 
   function removeEnv(id) { document.getElementById('env-' + id)?.remove(); }
 
   function updateEnvName(id) {
-    const val = document.getElementById('env-loc-' + id)?.value;
-    if (val && val !== 'Other') document.getElementById('env-name-' + id).textContent = val;
-    else if (val === 'Other') {
-      const custom = document.getElementById('env-loc-other-' + id)?.value;
-      document.getElementById('env-name-' + id).textContent = custom || 'Other';
-    }
+    updateCards();
   }
 
   /* ─── Scenes ─── */
@@ -1623,8 +1680,6 @@
 
     const roleOpts = roleOptions().map(t => `<option value="${t}">${t}</option>`).join('');
 
-    const toolOpts = TOOLS.map(t => `<option value="${t}">${t}</option>`).join('');
-
     div.innerHTML = `
       <div class="scene-head">
         <span class="scene-label">Scene ${sc}</span>
@@ -1632,90 +1687,13 @@
       </div>
       <div class="field-grid" style="gap:10px;">
         <div class="field">
-          <label>Scene description <span class="req">*</span></label>
-          <input type="text" class="scene-description" placeholder="${cleaningProfile().sceneExample}">
+          <label>Scene title <span class="req">*</span></label>
+          <input type="text" class="scene-title" placeholder="${cleaningProfile().sceneExample}">
         </div>
       </div>
 
-      <div style="margin-top:12px;">
-        <div style="font-size:11px;font-weight:600;color:var(--muted);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:8px;padding-bottom:5px;border-bottom:0.5px solid var(--border);">Product & Tools</div>
-        <div class="field-grid col-2" style="gap:8px;margin-bottom:8px;">
-          <div class="field">
-            <label>Product</label>
-            <div class="search-wrap">
-              <input type="text" class="scene-product-input" placeholder="Search product..." autocomplete="off"
-                oninput="filterProductDropdown(this)"
-                onfocus="showDropdown(this.closest('.search-wrap'))"
-                onblur="hideDropdown(this.closest('.search-wrap'))">
-              <input type="hidden" class="scene-product">
-              <div class="search-dropdown"></div>
-            </div>
-          </div>
-          <div class="field">
-            <label>Product SKU</label>
-            <input type="text" class="scene-sku" placeholder="Auto-fills or type manually">
-          </div>
-        </div>
-        <div class="field" style="margin-bottom:8px;">
-          <label>Tool</label>
-          <div style="display:flex;gap:8px;align-items:center;">
-            <select class="scene-tool-item" onchange="handleToolChange(this)" style="flex:1;">
-              <option value="">Select tool...</option>
-              ${toolOpts}
-            </select>
-            <select class="scene-cloth-item" style="display:none;flex:1;">
-              <option value="">Cloth color...</option>
-              <option value="Red">Red</option>
-              <option value="Blue">Blue</option>
-              <option value="Green">Green</option>
-              <option value="Yellow">Yellow</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <div style="margin-top:12px;">
-        <div style="font-size:11px;font-weight:600;color:var(--muted);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:8px;padding-bottom:5px;border-bottom:0.5px solid var(--border);">EHS</div>
-        <div class="field-grid col-3" style="gap:8px;margin-bottom:8px;">
-          <div class="field">
-            <label>Gloves</label>
-            <select class="scene-gloves">
-              <option value="">Select...</option>
-              <option>Yes — Nitrile</option><option>Yes — Latex</option><option>Yes — Rubber</option><option>No</option>
-            </select>
-          </div>
-          <div class="field">
-            <label>Mask</label>
-            <select class="scene-mask">
-              <option value="">Select...</option>
-              <option>Yes — Surgical</option><option>Yes — FFP2/N95</option><option>Yes — Full face</option><option>No</option>
-            </select>
-          </div>
-          <div class="field">
-            <label>Safety goggles</label>
-            <select class="scene-goggles">
-              <option value="">Select...</option><option>Yes</option><option>No</option>
-            </select>
-          </div>
-        </div>
-        <div class="field-grid col-2" style="gap:8px;">
-          <div class="field">
-            <label style="display:flex;align-items:center;gap:8px;cursor:pointer;text-transform:none;letter-spacing:0;">
-              <input type="checkbox" class="scene-dispenser-cb" onchange="toggleDispenser(this)" style="width:15px;height:15px;margin:0;cursor:pointer;">
-              Dispenser used?
-            </label>
-            <input type="text" class="scene-dispenser" placeholder="Dispenser type..." style="margin-top:6px;display:none;">
-          </div>
-          <div class="field">
-            <label style="display:flex;align-items:center;gap:8px;cursor:pointer;text-transform:none;letter-spacing:0;">
-              <input type="checkbox" class="scene-dilution-cb" onchange="toggleDilution(this)" style="width:15px;height:15px;margin:0;cursor:pointer;">
-              Dilution required?
-            </label>
-            <input type="text" class="scene-dilution" placeholder="e.g. 1:50 with water" style="margin-top:6px;display:none;">
-          </div>
-        </div>
-      </div>
-
+      ${sceneTheoryHTML()}
+      <div class="scene-practical">
       <div style="margin-top:12px;">
         <div style="font-size:11px;font-weight:600;color:var(--muted);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:8px;padding-bottom:5px;border-bottom:0.5px solid var(--border);">Actions <span style="font-weight:400;color:var(--muted-2);">(max 5)</span></div>
         <div id="actions-${sceneId}"></div>
@@ -1741,9 +1719,10 @@
             <input id="override-role-other-${sceneId}" type="text" hidden placeholder="${cleaningProfile().roleExample}" style="margin-top:6px;">
           </div>
         </div>
-      </div>`;
+      </div></div>`;
 
     document.getElementById('scenes-' + envId).appendChild(div);
+    attachSceneMode(div);prepareScene(div);
     addAction(sceneId);
   }
 
@@ -1757,14 +1736,12 @@
   function addAction(sceneId) {
     const currentActions = document.querySelectorAll('#actions-' + sceneId + ' .action-block');
     if (currentActions.length >= 5) {
-      showToast('⚠ Maximum 5 actions per scene. Start a new scene for different tools or products.', true);
+      showToast('Maximum 5 actions per scene.', true);
       return;
     }
     actionCounts[sceneId] = (actionCounts[sceneId] || 0) + 1;
     const ac = actionCounts[sceneId];
     const actionId = `act-${sceneId}-${ac}`;
-    const actionToolOpts = TOOLS.map(t => `<option value="${t}">${t}</option>`).join('');
-
     const div = document.createElement('div');
     div.className = 'action-block';
     div.id = actionId;
@@ -1772,55 +1749,22 @@
     div.innerHTML = `
       <div class="action-head">
         <span class="action-label">Action ${ac}</span>
-        ${ac > 1 ? `<button class="btn-remove" onclick="document.getElementById('${actionId}').remove()">✕</button>` : ''}
+        <button type="button" class="btn-remove" aria-label="Remove action" onclick="const list=this.closest('.action-block').parentElement;this.closest('.action-block').remove();cleanActionNumbers(list)">✕</button>
       </div>
       <div class="field-grid col-2" style="gap:8px;">
         <div class="field">
-          <label>Action description <span class="req">*</span></label>
-          <input type="text" class="action-desc" placeholder="e.g. Wipe the shower head">
+          <label>Action title <span class="req">*</span></label>
+          <input type="text" class="action-title" placeholder="e.g. Wipe the shower head">
         </div>
         <div class="field">
           <label>Surface / area</label>
           <input type="text" class="action-surface" placeholder="e.g. Shower head, tap, tile">
         </div>
       </div>
-      <label class="override-toggle" style="margin-top:8px;">
-        <input type="checkbox" id="action-override-cb-${actionId}" onchange="toggleActionOverride('${actionId}')">
-        Override product/tool for this action
-      </label>
-      <div class="override-body" id="action-override-body-${actionId}">
-        <div class="field-grid col-2" style="gap:8px;margin-top:8px;">
-          <div class="field">
-            <label style="font-size:11px;">Product</label>
-            <div class="search-wrap">
-              <input type="text" class="action-product-input" placeholder="Search product..." autocomplete="off"
-                oninput="filterActionProductDropdown(this)"
-                onfocus="showDropdown(this.closest('.search-wrap'))"
-                onblur="hideDropdown(this.closest('.search-wrap'))">
-              <div class="search-dropdown"></div>
-            </div>
-          </div>
-          <div class="field">
-            <label style="font-size:11px;">Product SKU</label>
-            <input type="text" class="action-sku" placeholder="Auto-fills or type manually">
-          </div>
-        </div>
-        <div class="field" style="margin-top:8px;">
-          <label style="font-size:11px;">Tool</label>
-          <select class="action-tool">
-            <option value="">Select tool...</option>
-            ${actionToolOpts}
-          </select>
-        </div>
-      </div>`;
-
-    document.getElementById('actions-' + sceneId).appendChild(div);
-  }
-
-  function toggleActionOverride(actionId) {
-    const cb = document.getElementById('action-override-cb-' + actionId);
-    const body = document.getElementById('action-override-body-' + actionId);
-    if (body) body.classList.toggle('visible', cb.checked);
+      <div class="field action-details-field"><label>Action details / visual description</label><textarea class="action-details" rows="4" placeholder="Describe the visible action, required PPE, footwear, tool handling and other important details."></textarea></div>
+      ${resourcesHTML()}`;
+    const list=document.getElementById('actions-' + sceneId);
+    const prior=list.lastElementChild;copyActionResources(prior,div);list.appendChild(div);prepareAction(div,prior);
   }
 
   /* ─── Before / After cleaning ─── */
@@ -1847,34 +1791,6 @@
   }
 
   /* ─── Helpers ─── */
-  function toggleDispenser(cb) {
-    cb.closest('.field').querySelector('.scene-dispenser').style.display = cb.checked ? 'block' : 'none';
-  }
-  function toggleDilution(cb) {
-    cb.closest('.field').querySelector('.scene-dilution').style.display = cb.checked ? 'block' : 'none';
-  }
-  function handleToolChange(sel) {
-    const cloth = sel.closest('.tool-row').querySelector('.scene-cloth-item');
-    if (cloth) { cloth.style.display = sel.value === 'Microfiber cloth' ? 'block' : 'none'; if (sel.value !== 'Microfiber cloth') cloth.value = ''; }
-  }
-  function addToolRow(btn) {
-    const list = btn.previousElementSibling;
-    const toolOpts = TOOLS.map(t => `<option value="${t}">${t}</option>`).join('');
-    const row = document.createElement('div');
-    row.className = 'tool-row';
-    row.style.cssText = 'display:flex;gap:8px;align-items:center;';
-    row.innerHTML = `
-      <select class="scene-tool-item" onchange="handleToolChange(this)" style="flex:1;">
-        <option value="">Select tool...</option>${toolOpts}
-      </select>
-      <select class="scene-cloth-item" style="display:none;flex:1;">
-        <option value="">Cloth color...</option>
-        <option>Red</option><option>Blue</option><option>Green</option><option>Yellow</option>
-      </select>
-      <button type="button" class="btn-remove" onclick="this.closest('.tool-row').remove()" style="flex-shrink:0;">✕</button>`;
-    list.appendChild(row);
-  }
-
   /* ─── Dropdowns ─── */
   function showDropdown(wrap) {
     const list = (typeof wrap === 'string')
@@ -1904,33 +1820,7 @@
     const wrap = el.closest('.search-wrap');
     wrap.querySelector('.action-product-input').value = name;
     wrap.querySelector('.search-dropdown').style.display = 'none';
-    const actionBlock = wrap.closest('.action-block');
-    if (actionBlock && sku) {
-      const skuField = actionBlock.querySelector('.action-sku');
-      if (skuField) skuField.value = sku;
-    }
-  }
-
-  function filterProductDropdown(input) {
-    const wrap = input.closest('.search-wrap');
-    const list = wrap.querySelector('.search-dropdown');
-    const q = input.value.toLowerCase().trim();
-    const filtered = q ? PRODUCTS.filter(p => p.name.toLowerCase().includes(q) || p.sku.toLowerCase().includes(q)).slice(0,30) : [];
-    list.innerHTML = filtered.map(p =>
-      `<div class="search-item" onmousedown="selectProduct(this,'${p.name.replace(/'/g,"\'")}',' ${p.sku}')">${p.name}<span style="color:var(--muted);font-size:11px;margin-left:8px;">${p.sku}</span></div>`
-    ).join('');
-    list.style.display = filtered.length ? 'block' : 'none';
-  }
-  function selectProduct(el, name, sku) {
-    const wrap = el.closest('.search-wrap');
-    wrap.querySelector('.scene-product-input') && (wrap.querySelector('.scene-product-input').value = name);
-    wrap.querySelector('.scene-product') && (wrap.querySelector('.scene-product').value = name);
-    wrap.querySelector('.search-dropdown').style.display = 'none';
-    const sceneBlock = wrap.closest('.scene-block');
-    if (sceneBlock && sku) {
-      const skuField = sceneBlock.querySelector('.scene-sku');
-      if (skuField) skuField.value = sku;
-    }
+    wrap.closest('.product-row').querySelector('.action-sku').value=sku;
   }
 
   /* ─── Tags ─── */
@@ -1953,37 +1843,17 @@
       document.querySelectorAll(`#scenes-${id} .scene-block`).forEach(sb => {
         const sceneId = sb.id;
         const hasOverride = sb.querySelector('[id^="override-cb-"]')?.checked || false;
-        const dispenserCb = sb.querySelector('.scene-dispenser-cb');
-        const dilutionCb = sb.querySelector('.scene-dilution-cb');
-        const toolItem = sb.querySelector('.scene-tool-item');
-        const clothItem = sb.querySelector('.scene-cloth-item');
-
-        const actions = [];
-        sb.querySelectorAll('.action-block').forEach(ab => {
-          actions.push({
-            description: ab.querySelector('.action-desc')?.value || '',
-            surface: ab.querySelector('.action-surface')?.value || '',
-            productOverride: ab.querySelector('.action-product-input')?.value || '',
-            skuOverride: ab.querySelector('.action-sku')?.value || '',
-            toolOverride: ab.querySelector('.action-tool')?.value || '',
-          });
-        });
-
+        const practical=sb.dataset.contentType!=='theoretical';
+        const actions=practical?[...sb.querySelectorAll('.scene-practical .action-block')].map((ab,i)=>({
+          id:uidFor(ab),references:readRefs(ab),order:i+1,title:fieldValue(ab,'.action-title'),details:fieldValue(ab,'.action-details'),surface:fieldValue(ab,'.action-surface'),...packActionResources(ab)
+        })):[];
         const overrideGenderId = `override-gender-${sceneId}`;
         const overrideRoleId = `override-role-${sceneId}`;
         scenes.push({
-          description: sb.querySelector('.scene-description')?.value || '',
-          product: sb.querySelector('.scene-product')?.value || sb.querySelector('.scene-product-input')?.value || '',
-          sku: sb.querySelector('.scene-sku')?.value || '',
-          tool: toolItem?.value || '',
-          cloth: (clothItem && clothItem.style.display !== 'none') ? clothItem.value : '',
-          gloves: sb.querySelector('.scene-gloves')?.value || '',
-          mask: sb.querySelector('.scene-mask')?.value || '',
-          goggles: sb.querySelector('.scene-goggles')?.value || '',
-          dispenser: dispenserCb?.checked ? (sb.querySelector('.scene-dispenser')?.value || 'Yes') : '',
-          dilution: dilutionCb?.checked ? (sb.querySelector('.scene-dilution')?.value || 'Yes') : '',
+          id:uidFor(sb),references:readRefs(sb),title:fieldValue(sb,'.scene-title'),order:scenes.length+1,
+          contentType:practical?'practical':'theoretical',sections:practical?[]:readSections(sb),
           actions,
-          override: hasOverride ? {
+          override: practical && hasOverride ? {
             role: document.getElementById(overrideRoleId)?.value === 'Other' ? (document.getElementById('override-role-other-'+sceneId)?.value.trim() || '') : (document.getElementById(overrideRoleId)?.value || ''),
             gender: document.getElementById(overrideGenderId)?.value || '',
           } : null,
@@ -2000,10 +1870,9 @@
       email: document.getElementById('f-email').value,
       date: document.getElementById('f-date').value,
       objective: document.getElementById('f-objective').value,
-      role: document.getElementById('f-role').value,
-      gender: document.getElementById('f-gender').value,
-      roleOther: document.getElementById('f-role-other').value,
-      uniform: document.getElementById('f-uniform').value,
+      ...(briefType==='EHS'?{}:{role:document.getElementById('f-role').value,
+        roleOther:document.getElementById('f-role-other').value,gender:document.getElementById('f-gender').value,uniform:document.getElementById('f-uniform').value}),
+      references:readRefs(document.getElementById('brief-references')),
       environments,
 
       beforeActions: getBeforeAfterItems('before'),
@@ -2024,9 +1893,10 @@
     if (!data.date) return 'Date is required.';
     if (data.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) return 'Please enter a valid email address.';
     if (data.briefType === 'EHS') return validateEhs(data);
-    if (!data.gender) return 'Please select a gender.';
-    if (!data.role) return 'Role is required.';
-    if (data.role === 'Other' && !data.roleOther) {
+    const hasPractical=data.environments.some(env=>env.scenes.some(scene=>scene.contentType!=='theoretical'));
+    if (hasPractical && !data.gender) return 'Please select a gender.';
+    if (hasPractical && !data.role) return 'Role is required.';
+    if (hasPractical && data.role === 'Other' && !data.roleOther) {
       const el = document.getElementById('f-role-other');
       if (el) { el.style.borderColor = 'var(--danger)'; el.focus(); }
       return 'Please specify the role.';
@@ -2034,9 +1904,14 @@
     if (!data.environments.length) return 'Add at least one environment.';
     for (const env of data.environments) {
       if (!env.location) return 'Please select a location type for all environments.';
+      if(!env.scenes.length) return 'Add at least one scene to every environment.';
       for (const scene of env.scenes || []) {
-        if (!scene.description.trim()) return 'Scene description is required for all scenes.';
-        if ((scene.actions || []).some(action => !action.description.trim())) return 'Complete or remove empty actions.';
+        const prefix='Scene '+scene.order+': ';
+        if(!scene.title)return prefix+'enter a scene title.';
+        if(scene.contentType==='theoretical'){const error=validateSections(scene);if(error)return prefix+error;continue;}
+        if(!scene.actions.length)return prefix+'add at least one action.';
+        const error=validateResources(scene);if(error)return prefix+error;
+        const incomplete=scene.actions.find(action=>!action.title);if(incomplete)return prefix+'enter a title for Action '+incomplete.order+'.';
       }
     }
     if (!data.beforeActions.length || !data.afterActions.length) return 'Add at least one Before you start and one After you finish step.';
@@ -2091,11 +1966,11 @@
   async function submitForm() {
     const data=collectData(), err=validate(data);
     if(err){showToast('⚠ '+err,true);return;}
-    if(PREVIEW_MODE){showToast('Preview only — your brief has not been submitted.');return;}
+    if(PREVIEW_MODE){showToast('Submissions are closed. Your brief has not been submitted.');return;}
     const btn=document.getElementById('submit-btn');if(btn.disabled)return;
     btn.disabled=true;btn.textContent='Submitting…';
     try {
-      const photoUrls=await getUploadedUrls();if(photoUrls.length)data.photoUrls=photoUrls;
+      await finalizeReferences(data);
       data.submissionId=submissionIdentity(data);
       const receipt=await sendBrief(data);
       if(receipt?.status!=='ok'||receipt.submissionId!==data.submissionId)throw new Error(receipt?.message||'Submission could not be confirmed.');
@@ -2399,7 +2274,7 @@
     }
   ]
 };
-  const BRIEF_TYPES = ["Hospitality","Healthcare","EHS",...Object.keys(CLEANING_VIDEO_CATALOG).filter(type=>type!=="Hospitality")];
+  const BRIEF_TYPES = ["Hospitality","Healthcare","EHS","Industrial Kitchen Hygiene",...Object.keys(CLEANING_VIDEO_CATALOG).filter(type=>type!=="Hospitality")];
   const titleDrafts = {};
   function titlesForType(type) { return type==="EHS" ? BRIEF_TITLE_CATALOGS.EHS : (CLEANING_VIDEO_CATALOG[type]||[]).map(video=>video.title); }
   const BRIEF_TITLE_CATALOGS = Object.freeze({
@@ -2979,7 +2854,7 @@
     const combo = input.closest('.ehs-combo');
     const selected = combo.querySelector('.ehs-value').value;
     const q = input.value === selected ? '' : input.value.trim().toLowerCase();
-    const choices = EHS_OPTIONS[combo.dataset.kind].filter(v => v === 'Other' || v.toLowerCase().includes(q));
+    const choices = sectorChoices(input).filter(v => v === 'Other' || v.toLowerCase().includes(q));
     const list = combo.querySelector('.search-dropdown');
     list.replaceChildren();
     choices.forEach(value => {
@@ -2988,7 +2863,7 @@
       option.setAttribute('role','option'); option.setAttribute('aria-selected',String(value === selected));
       option.onmousedown = event => event.preventDefault();
       option.onclick = () => {
-        input.value = value; combo.querySelector('.ehs-value').value = value;
+        input.value = value; combo.querySelector('.ehs-value').value = value;if(combo.closest('.scene-cast'))syncCast(combo.closest('.scene-block'));
         combo.querySelector('.ehs-other').hidden = value !== 'Other';
         list.style.display = 'none'; input.setAttribute('aria-expanded','false');
         if (value === 'Other') combo.querySelector('.ehs-custom').focus();
@@ -3036,7 +2911,7 @@
     return '<div class="ehs-equipment-list"></div><button type="button" class="btn-ghost" onclick="addEhsEquipment(this)">+ Add equipment</button>';
   }
   const EHS_ACTION_TYPES = {
-    regular: {label:'Regular', fields:[{key:'description',label:'Action',placeholder:'Describe what happens or what should be explained.'}]},
+    regular: {label:'Regular', fields:[]},
     negative_positive: {label:'Negative / Positive', fields:[
       {key:'negative',label:'Negative action',placeholder:'Describe the unsafe action or omission.'},
       {key:'positive',label:'Positive action',placeholder:'Describe the correct action.'}
@@ -3049,50 +2924,12 @@
     row.className='ehs-action'; row.id='ehs-action-'+(++ehsActionSequence); row.dataset.actionType=type;
     const fields=definition.fields.map(field=>`<div class="${type==='negative_positive'?'ehs-variant '+field.key:'field'}"><label for="${row.id}-${field.key}">${field.label} <span class="req">*</span></label><textarea id="${row.id}-${field.key}" data-action-field="${field.key}" placeholder="${field.placeholder}"></textarea></div>`).join('');
     row.innerHTML=`<div class="ehs-action-head"><span class="ehs-action-label"></span><button type="button" class="btn-remove" aria-label="Remove action" onclick="this.closest('.ehs-action').remove(); renumberEhs()">✕</button></div><div class="${type==='negative_positive'?'ehs-compare':''}">${fields}</div>`;
-    document.getElementById(sceneId).querySelector('.ehs-actions').appendChild(row); renumberEhs();
-  }
-  function addEhsCharacter(sceneId) {
-    const scene=document.getElementById(sceneId);
-    if (!scene || scene.querySelector('.ehs-item')) return;
-    const row=document.createElement('div');
-    row.className='ehs-character'; row.dataset.characterId='character-'+(++ehsCharacterSequence);
-    row.innerHTML=`<div class="ehs-character-head"><span class="ehs-character-label"></span><button type="button" class="btn-remove" aria-label="Remove character" onclick="this.closest('.ehs-character').remove(); renumberEhs()">✕</button></div>
-      <div class="field-grid col-2">${ehsCombo('role','Worker / person type',true)}${ehsCombo('gender','Gender',true)}</div>
-      <div class="field" style="margin-top:10px"><label>Appearance / uniform notes</label><input class="ehs-uniform" type="text" placeholder="Clothing or details that identify this person"></div>
-      <label class="ehs-toggle"><input type="checkbox" class="ehs-equipment-enabled" onchange="toggleEhsCharacter(this.closest('.ehs-character'))">Specify equipment</label>
-      <div class="ehs-character-equipment" hidden>
-        <div class="ehs-default-equipment"><div class="ehs-subtitle">Equipment for this character</div>${ehsEquipmentEditor()}</div>
-        <div class="ehs-comparison-equipment" hidden>
-          <label class="ehs-toggle"><input type="checkbox" class="ehs-separate-equipment" onchange="toggleEhsCharacter(this.closest('.ehs-character'))">Use different equipment for Negative / Positive actions</label>
-          <div class="ehs-equipment-variants" hidden><p class="hint">These lists apply to this character in all Negative / Positive actions in this scene. The list above is used for Regular actions. Either list below may be empty.</p><div class="ehs-compare">
-            <div class="ehs-variant negative"><h3>Negative equipment</h3>${ehsEquipmentEditor()}</div>
-            <div class="ehs-variant positive"><h3>Positive equipment</h3>${ehsEquipmentEditor()}</div>
-          </div></div>
-        </div>
-      </div>`;
-    scene.querySelector('.ehs-characters').appendChild(row); renumberEhs();
-  }
-  function addEhsItem(sceneId) {
-    const scene=document.getElementById(sceneId);
-    if (!scene || scene.querySelector('.ehs-character')) return;
-    const row=document.createElement('div');
-    row.className='ehs-item'; row.dataset.itemId='item-'+(++ehsItemSequence);
-    row.innerHTML=`<div class="ehs-item-head"><span class="ehs-item-label"></span><button type="button" class="btn-remove" aria-label="Remove item" onclick="this.closest('.ehs-item').remove(); renumberEhs()">✕</button></div>
-      <div class="field-grid col-2">${ehsCombo('item','Item / equipment',true)}
-        <div class="field"><label for="${row.dataset.itemId}-details">Item details</label><input id="${row.dataset.itemId}-details" class="ehs-item-details" type="text" placeholder="Colour, condition, parts or details to show"></div>
-      </div>`;
-    scene.querySelector('.ehs-items').appendChild(row); renumberEhs();
-  }
-  function updateEhsSubjectControls(scene) {
-    const hasCharacters=!!scene.querySelector('.ehs-character');
-    const hasItems=!!scene.querySelector('.ehs-item');
-    scene.querySelector('.ehs-add-character').disabled=hasItems;
-    scene.querySelector('.ehs-add-item').disabled=hasCharacters;
-    scene.querySelector('.ehs-subject-hint').textContent=hasItems
-      ? 'Item-focused scene. Add more items, or remove all items to add characters.'
-      : hasCharacters
-        ? 'Character-focused scene. Equipment can be specified on each character. Remove all characters to add items.'
-        : 'Optional. Add characters or items for this scene. You can add multiple entries of the same type.';
+    row.querySelector('.ehs-action-head').insertAdjacentHTML('afterend','<div class="field"><label>Action title <span class="req">*</span></label><input type="text" class="action-title" aria-label="Action title" placeholder="Name this action"></div>');
+    row.insertAdjacentHTML('beforeend','<div class="field action-details-field"><label>Action details / visual description</label><textarea class="action-details" rows="4" placeholder="Describe the visible action and important requirements."></textarea></div>'); row.insertAdjacentHTML('beforeend',resourcesHTML());
+    const list=document.getElementById(sceneId).querySelector('.ehs-actions'),prior=list.lastElementChild;
+    copyActionResources(prior,row);list.appendChild(row);
+    prepareAction(row,prior);
+    renumberEhs();
   }
   function addEhsScene() {
     const id='ehs-scene-'+(++ehsSequence), scene=document.createElement('div');
@@ -3105,70 +2942,110 @@
         <div class="field"><label for="${id}-hazard">Hazard</label><input type="text" id="${id}-hazard" class="ehs-hazard" placeholder="Hazard to recognise, if relevant"></div>
       </div>
       <div class="field" style="margin-top:14px"><label for="${id}-key-message">Key message</label><input type="text" id="${id}-key-message" class="ehs-key-message" placeholder="The short sentence or point to emphasise"></div>
-      <div class="ehs-subtitle">Characters or items in this scene</div><p class="hint ehs-subject-hint" aria-live="polite"></p>
-      <div class="ehs-characters"></div><div class="ehs-items"></div>
-      <div class="ehs-subject-buttons"><button type="button" class="btn-ghost ehs-add-character" onclick="addEhsCharacter('${id}')">+ Add character</button><button type="button" class="btn-ghost ehs-add-item" onclick="addEhsItem('${id}')">+ Add item</button></div>
       <div class="ehs-subtitle">Actions in this scene</div><div class="ehs-actions"></div>
       <div class="ehs-action-buttons"><button type="button" class="btn-ghost" onclick="addEhsAction('${id}','regular')">+ Add Regular action</button><button type="button" class="btn-ghost" onclick="addEhsAction('${id}','negative_positive')">+ Add Negative / Positive action</button></div>
       <div class="field" style="margin-top:16px"><label for="${id}-notes">Note</label><textarea id="${id}-notes" rows="2" class="ehs-narrative" placeholder="Specific emphasis, continuity or storytelling notes."></textarea></div>`;
-    document.getElementById('ehs-scenes').appendChild(scene); renumberEhs();
+    document.getElementById('ehs-scenes').appendChild(scene);
+    const practical=document.createElement('div'); practical.className='scene-practical';
+    const start=scene.querySelector('.ehs-subtitle');
+    while(start.nextSibling) practical.appendChild(start.nextSibling);
+    practical.prepend(start); scene.appendChild(practical);
+    const theory=document.createElement('div'); theory.innerHTML=sceneTheoryHTML(); scene.insertBefore(theory,practical);
+    attachSceneMode(scene);prepareScene(scene);renumberEhs();
   }
-  function renumberEhs() {
-    document.querySelectorAll('.ehs-scene').forEach((scene,i)=>{
-      scene.querySelector('.scene-label').textContent='Scene '+(i+1);
-      scene.querySelectorAll('.ehs-character-label').forEach((label,j)=>label.textContent='Character '+(j+1));
-      scene.querySelectorAll('.ehs-item-label').forEach((label,j)=>label.textContent='Item '+(j+1));
-      updateEhsSubjectControls(scene);
-      scene.querySelectorAll('.ehs-action').forEach((action,j)=>action.querySelector('.ehs-action-label').textContent='Action '+String(j+1).padStart(2,'0')+' · '+EHS_ACTION_TYPES[action.dataset.actionType].label);
-      scene.querySelectorAll('.ehs-character').forEach(toggleEhsCharacter);
-    });
-  }
-  function toggleEhsCharacter(character) {
-    const comparison=!!character.closest('.ehs-scene').querySelector('.ehs-action[data-action-type="negative_positive"]');
-    character.querySelector('.ehs-character-equipment').hidden=!character.querySelector('.ehs-equipment-enabled').checked;
-    character.querySelector('.ehs-comparison-equipment').hidden=!comparison;
-    character.querySelector('.ehs-equipment-variants').hidden=!comparison || !character.querySelector('.ehs-separate-equipment').checked;
-  }
+  function renumberEhs(){updateCards();}
   function ehsEquipment(root) {
     return [...root.querySelectorAll('.ehs-equipment-row')].map(row=>ehsChoice(row,'equipment'));
   }
-  function collectEhsScenes() {
+  const actionSelector='.ehs-action,.action-block:not(.theory-section)';
+  function currentScenes(){return [...document.querySelectorAll(briefType==='EHS'?'#ehs-scenes .ehs-scene':'#env-list .scene-block')];}
+  function uidFor(el){return el.dataset.uid ||= localUID();}
+  function localUID(){return crypto.randomUUID?.() || Array.from(crypto.getRandomValues(new Uint8Array(16)),b=>b.toString(16).padStart(2,'0')).join('');}
+  function sectorChoices(input){return EHS_OPTIONS[input.closest('.ehs-combo').dataset.kind]||[];}
+  function castHTML(id){
+    return `<div class="scene-cast"><div class="resource-title">Scene subjects</div><p class="hint cast-hint"></p><div class="cast-people"></div><div class="cast-items"></div><div class="cast-buttons"><button type="button" class="btn-ghost cast-add-person" onclick="addSubject(this,'person')">+ Add character</button><button type="button" class="btn-ghost cast-add-item" onclick="addSubject(this,'item')">+ Add item</button></div></div>`;
+  }
+  function addSubject(btn,type){
+    const scene=btn.closest('.scene-block'),cast=btn.closest('.scene-cast'),person=type==='person';
+    if(cast.querySelector(person?'.cast-item':'.cast-person'))return;
+    const row=document.createElement('div');row.className=person?'cast-person ehs-character':'cast-item ehs-item';uidFor(row);
+    row.innerHTML=`<div class="ehs-character-head"><span class="cast-index"></span><button type="button" class="btn-remove" aria-label="Remove ${person?'character':'item'}" onclick="const s=this.closest('.scene-block');this.closest('.cast-person,.cast-item').remove();syncCast(s)">✕</button></div>`+(person?
+      `<div class="field-grid col-2">${ehsCombo('role','Worker / person type',true)}${ehsCombo('gender','Gender',true)}</div><div class="field"><label>Appearance / uniform notes<input type="text" class="ehs-uniform" placeholder="Describe this character’s clothing or appearance"></label></div>`:
+      `<div class="field-grid col-2">${ehsCombo('item','Item / equipment',true)}<div class="field"><label>Item details<input type="text" class="ehs-item-details" placeholder="Colour, condition, parts or details to show"></label></div></div>`);
+    cast.querySelector(person?'.cast-people':'.cast-items').append(row);syncCast(scene);
+  }
+  function sceneSubjects(scene){
+    const cast=scene.querySelector('.scene-cast');
+    const characters=[...cast.querySelectorAll('.cast-person')].map((c,i)=>({id:uidFor(c),order:i+1,role:ehsChoice(c,'role'),gender:ehsChoice(c,'gender'),uniform:fieldValue(c,'.ehs-uniform')}));
+    const items=[...cast.querySelectorAll('.cast-item')].map((c,i)=>({id:uidFor(c),order:i+1,name:ehsChoice(c,'item'),description:fieldValue(c,'.ehs-item-details')}));
+    return {subjectType:characters.length?'characters':items.length?'items':'none',characters,items};
+  }
+  function validateSubjects(scene){
+    if(scene.items.some(i=>!i.name))return 'select the scene item or specify Other.';
+    if(scene.characters.some(c=>!c.role||!EHS_OPTIONS.gender.includes(c.gender)))return 'select a worker / person type and gender for each scene character.';
+    return null;
+  }
+  function syncCast(scene){
+    const cast=scene.querySelector('.scene-cast'),{characters,items}=sceneSubjects(scene);
+    cast.querySelector('.cast-add-person').disabled=!!items.length;cast.querySelector('.cast-add-item').disabled=!!characters.length;
+    cast.querySelector('.cast-hint').textContent=characters.length?'Character scene. Add more people, or remove all characters to switch to items.':items.length?'Item scene. Add more items, or remove all items to switch to characters.':'Optional. Add one or more characters, or one or more items.';
+    cast.querySelectorAll('.cast-index').forEach((x,i)=>x.textContent=(characters.length?'Character ':'Item ')+(i+1));
+    for(const a of scene.querySelectorAll(actionSelector))syncWearers(a,characters);
+  }
+  function syncWearers(action,characters){
+    const list=action.querySelector('.wearers');if(!list)return;
+    for(const row of [...list.children])if(!characters.some(c=>c.id===row.dataset.wearer))row.remove();
+    for(const c of characters){
+      let row=[...list.children].find(r=>r.dataset.wearer===c.id);
+      if(!row){
+        row=document.createElement('div');row.className='wearer';row.dataset.wearer=c.id;
+        row.innerHTML=`<label class="ehs-toggle"><input type="checkbox" class="specify" onchange="updateWearer(this.closest('.wearer'))"><span class="wearer-label"></span></label><div class="wear-body" hidden><div class="eq-base">${ehsEquipmentEditor()}</div>${action.dataset.actionType==='negative_positive'?`<label class="ehs-toggle"><input class="different" type="checkbox" onchange="updateWearer(this.closest('.wearer'))">Different equipment for Negative / Positive</label><div class="eq-split ehs-compare" hidden><div class="ehs-variant negative"><h3>Negative equipment</h3>${ehsEquipmentEditor()}</div><div class="ehs-variant positive"><h3>Positive equipment</h3>${ehsEquipmentEditor()}</div></div>`:''}</div>`;list.append(row);
+      }
+      row.querySelector('.wearer-label').textContent='Specify equipment for Character '+c.order+(c.role?' · '+c.role:'');
+    }
+  }
+  function updateWearer(row){
+    row.querySelector('.wear-body').hidden=!row.querySelector('.specify').checked;
+    if(row.querySelector('.eq-split'))row.querySelector('.eq-split').hidden=!row.querySelector('.different').checked;
+  }
+  function readWearers(action){return [...action.querySelectorAll('.wearer')].filter(r=>r.querySelector('.specify').checked).map(r=>({characterId:r.dataset.wearer,equipment:ehsEquipment(r.querySelector('.eq-base')),comparisonEquipment:r.querySelector('.different')?.checked?{negative:ehsEquipment(r.querySelector('.negative')),positive:ehsEquipment(r.querySelector('.positive'))}:null}));}
+  function copyWearers(prior,row){
+    if(!prior)return;
+    for(const src of prior.querySelectorAll('.wearer')){
+      const dst=[...row.querySelectorAll('.wearer')].find(r=>r.dataset.wearer===src.dataset.wearer);
+      if(!dst||!src.querySelector('.specify').checked)continue;
+      dst.querySelector('.specify').checked=true;
+      if(dst.querySelector('.different'))dst.querySelector('.different').checked=!!src.querySelector('.different')?.checked;
+      for(const cls of ['.eq-base','.negative','.positive']){
+        const from=src.querySelector(cls),to=dst.querySelector(cls);if(!from||!to)continue;
+        for(const combo of from.querySelectorAll('.ehs-equipment-row')){
+          addEhsEquipment(to.querySelector('.btn-ghost'));const last=to.querySelector('.ehs-equipment-list').lastElementChild;
+          for(const k of ['.ehs-display','.ehs-value','.ehs-custom'])last.querySelector(k).value=combo.querySelector(k).value;
+          last.querySelector('.ehs-other').hidden=combo.querySelector('.ehs-other').hidden;
+        }
+      }
+      updateWearer(dst);
+    }
+  }
+  function collectEhsScenes(){
     return [...document.querySelectorAll('.ehs-scene')].map((scene,i)=>{
-      const actions=[...scene.querySelectorAll('.ehs-action')].map((row,j)=>{
-        const action={id:row.id,order:j+1,type:row.dataset.actionType};
-        EHS_ACTION_TYPES[action.type].fields.forEach(field=>action[field.key]=row.querySelector('[data-action-field="'+field.key+'"]').value.trim());
+      const practical=scene.dataset.contentType!=='theoretical';
+      const actions=practical?[...scene.querySelectorAll('.ehs-action')].map((row,j)=>{
+        const action={id:uidFor(row),references:readRefs(row),characterEquipment:readWearers(row),order:j+1,type:row.dataset.actionType,title:fieldValue(row,'.action-title'),details:fieldValue(row,'.action-details'),...packActionResources(row)};
+        EHS_ACTION_TYPES[action.type].fields.forEach(field=>action[field.key]=fieldValue(row,'[data-action-field="'+field.key+'"]'));
         return action;
-      });
-      const comparison=actions.some(action=>action.type==='negative_positive');
-      return {
-        id:scene.id, order:i+1, title:scene.querySelector('.ehs-title').value.trim(),
-        location:ehsChoice(scene,'location'), environmentDescription:scene.querySelector('.ehs-setting').value.trim(),
-        objective:scene.querySelector('.ehs-objective').value.trim(), hazard:scene.querySelector('.ehs-hazard').value.trim(),
-        note:scene.querySelector('.ehs-narrative').value.trim(), actions,
-        keyMessage:scene.querySelector('.ehs-key-message').value.trim(),
-        subjectType:scene.querySelector('.ehs-character')?'characters':scene.querySelector('.ehs-item')?'items':'none',
-        items:[...scene.querySelectorAll('.ehs-item')].map((row,j)=>({
-          id:row.dataset.itemId, order:j+1, name:ehsChoice(row,'item'),
-          description:row.querySelector('.ehs-item-details').value.trim()
-        })),
-        characters:[...scene.querySelectorAll('.ehs-character')].map(row=>{
-          const enabled=row.querySelector('.ehs-equipment-enabled').checked;
-          const separate=enabled && comparison && row.querySelector('.ehs-separate-equipment').checked;
-          return {id:row.dataset.characterId,role:ehsChoice(row,'role'),gender:ehsChoice(row,'gender'),uniform:row.querySelector('.ehs-uniform').value.trim(),
-            equipmentEnabled:enabled,equipment:enabled?ehsEquipment(row.querySelector('.ehs-default-equipment')):[],
-            comparisonEquipment:separate?{negative:ehsEquipment(row.querySelector('.negative')),positive:ehsEquipment(row.querySelector('.positive'))}:null};
-        })
-      };
+      }):[];
+      return {id:uidFor(scene),references:readRefs(scene),...sceneSubjects(scene),order:i+1,title:fieldValue(scene,'.ehs-title'),contentType:practical?'practical':'theoretical',location:ehsChoice(scene,'location'),environmentDescription:fieldValue(scene,'.ehs-setting'),objective:fieldValue(scene,'.ehs-objective'),hazard:fieldValue(scene,'.ehs-hazard'),keyMessage:fieldValue(scene,'.ehs-key-message'),note:practical?fieldValue(scene,'.ehs-narrative'):'',actions,sections:practical?[]:readSections(scene)};
     });
   }
   function collectData() {
-    const data=collectLegacyData();
+    updateCards();const data=collectLegacyData();
     if (titlesForType(briefType).length) data.title=document.getElementById('f-ehs-title').value;
     ['title','author','objective','disclaimer'].forEach(key=>data[key]=data[key].trim());
-    data.schemaVersion=briefType==='EHS'?6:5;
+    data.schemaVersion=10; // Requires matching Apps Script update before live submission.
     // Existing Apps Script routes these departments through the Hospitality workflow.
     // Keep the selected category separately so it can acquire its own workflow later.
-    data.briefType=briefType==='EHS'?'EHS':briefType==='Healthcare'?'Healthcare':'Hospitality';
+    data.briefType=briefType==='Industrial Kitchen Hygiene'?'Industrial Kitchen Hygiene':briefType==='EHS'?'EHS':briefType==='Healthcare'?'Healthcare':'Hospitality';
     data.briefCategory=briefType;
     data.workflowType=briefType==='EHS'?'EHS':briefType==='Healthcare'?'Healthcare':'Housekeeping';
     data.department=briefType==='Hospitality'?'Housekeeping':briefType;
@@ -3176,10 +3053,12 @@
     data.videoId=video?.id || ''; data.moduleId=video?.id.split('.').slice(0,2).join('.') || '';
     data.learningObjective=data.objective;
     if (briefType==='EHS') {
-      data.role=''; data.gender=''; data.roleOther=''; data.uniform='';
+
       data.environments=[]; data.beforeActions=[]; data.afterActions=[];
       data.ehs={scenes:collectEhsScenes()};
     } else data.ehs=null;
+    const scenes=briefType==='EHS'?data.ehs.scenes:data.environments.flatMap(env=>env.scenes);
+    data.contentType=scenes.every(scene=>scene.contentType==='theoretical')?'theoretical':scenes.some(scene=>scene.contentType==='theoretical')?'mixed':'practical';
     return data;
   }
   function validateEhs(data) {
@@ -3187,20 +3066,15 @@
     if (!data.learningObjective) return 'Learning objective is required for EHS.';
     if (!data.ehs.scenes.length) return 'Add at least one EHS scene.';
     for (const scene of data.ehs.scenes) {
-      const prefix='Scene '+scene.order+': ';
+      const prefix='Scene '+scene.order+': ';const subjectError=validateSubjects(scene);if(subjectError)return prefix+subjectError;
       if (!scene.title || !scene.objective) return prefix+'add a title and Scene Objective.';
       if (!scene.location) return prefix+'select an environment or specify Other.';
-      const items=scene.items || [];
-      if (scene.characters.length && items.length) return prefix+'use characters or items, not both.';
-      const expectedSubject=scene.characters.length?'characters':items.length?'items':'none';
-      if (scene.subjectType!==expectedSubject) return prefix+'check the scene subject selection.';
-      if (items.some(item=>!item.name || !item.name.trim())) return prefix+'select each item or specify Other.';
-      if (scene.characters.some(c=>!c.role || !EHS_OPTIONS.gender.includes(c.gender))) return prefix+'select a role and gender for every character.';
-      for (const character of scene.characters) {
-        const equipment=[...character.equipment,...(character.comparisonEquipment?.positive||[]),...(character.comparisonEquipment?.negative||[])];
-        if (equipment.some(v=>!v)) return prefix+'complete or remove empty equipment entries for each character.';
-      }
-      for (const action of scene.actions) {
+      if(scene.contentType==='theoretical'){const error=validateSections(scene);if(error)return prefix+error;continue;}
+      if(!scene.actions.length)return prefix+'add at least one action.';
+      const error=validateResources(scene);if(error)return prefix+error;
+      for(const action of scene.actions){
+        const ap=prefix+'Action '+action.order+': ';
+        if(!action.title)return ap+'enter an action title.';
         const definition=EHS_ACTION_TYPES[action.type];
         if (!definition || definition.fields.some(field=>!action[field.key])) return prefix+'complete Action '+action.order+' ('+(definition?.label||'unknown type')+').';
       }
@@ -3210,14 +3084,15 @@
   }
   let lastHospitalityDepartment = 'Hospitality';
   function selectMainBriefType(mainType) {
-    if (!['Hospitality','Healthcare','EHS'].includes(mainType)) return;
+    if (!['Hospitality','Healthcare','EHS','Industrial Kitchen Hygiene'].includes(mainType)) return;
     selectBriefType(mainType==='Hospitality'?lastHospitalityDepartment:mainType);
   }
   function selectBriefType(next) {
     if (!BRIEF_TYPES.includes(next)) return;
     titleDrafts[briefType]=titlesForType(briefType).length?document.getElementById('f-ehs-title').value:document.getElementById('f-title').value;
     if (briefType!=='EHS') {
-      roleDrafts[briefType]={role:document.getElementById('f-role').value,other:document.getElementById('f-role-other').value};
+
+      roleDrafts[briefType]={role:document.getElementById('f-role').value,other:document.getElementById('f-role-other').value,gender:document.getElementById('f-gender').value,uniform:document.getElementById('f-uniform').value};
       const list=document.getElementById('env-list');
       while(list.firstChild) cleaningDrafts[briefType].appendChild(list.firstChild);
     }
@@ -3244,7 +3119,7 @@
     } else if (!document.getElementById('ehs-scenes').children.length) addEhsScene();
     const sections=[...document.querySelectorAll('.page > .section')].filter(el=>!el.hidden);
     sections.forEach((el,i)=>{el.querySelector('.num').textContent=i+1;el.querySelector('.step-label').textContent='Step '+(i+1)+' / '+sections.length;});
-    document.getElementById('section-count').textContent=sections.length+' Sections';
+    document.getElementById('section-count').textContent=sections.length+' Sections';updateCards();
   }
   function initBriefTypes() {
     initBriefTitleChoices();
@@ -3252,41 +3127,132 @@
     addBeforeAfterRow('before'); addBeforeAfterRow('after');
   }
 
-  /* ─── Uploadcare ─── */
-  let ucWidget = null;
-
-  let collectedUrls = [];
-  let uploadPending = false;
-
-  function initUploadcare() {
-    if (PREVIEW_MODE) {
-      document.getElementById('uc-uploader').parentElement.innerHTML = '<p class="hint">Reference uploads will be available in the connected form. Existing reference files are not required to try this preview.</p>';
-      return;
+  const pad=n=>String(n).padStart(2,'0');
+  function prepareScene(scene){
+    scene.dataset.sector=briefType;
+    if(scene.classList.contains('ehs-scene')){
+      const before=scene.querySelector('.scene-theory').closest('.scene-block > *');
+      before.insertAdjacentHTML('beforebegin',castHTML(scene.id));syncCast(scene);
     }
-    ucWidget = uploadcare.Widget('#uc-uploader');
-    ucWidget.onUploadComplete(function(fileInfo) {
-      uploadPending = false;
-      if (fileInfo && fileInfo.cdnUrl) {
-        collectedUrls.push(fileInfo.cdnUrl);
-        const list = document.getElementById('uc-file-list');
-        const item = document.createElement('div');
-        item.className = 'photo-item';
-        const isImg = fileInfo.mimeType && fileInfo.mimeType.startsWith('image/');
-        item.innerHTML = isImg
-          ? '<img src="' + fileInfo.cdnUrl + '-/scale_crop/80x80/center/" alt="' + fileInfo.name + '"><div class="photo-name">' + fileInfo.name + '</div>'
-          : '<div style="width:80px;height:80px;border-radius:6px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:24px;background:#f7f8fa;">📄</div><div class="photo-name">' + fileInfo.name + '</div>';
-        list.appendChild(item);
-      }
+    foldCard(scene,'Scene');updateCards();
+  }
+  function prepareAction(row,prior){
+    const scene=row.closest('.scene-block');if(scene.classList.contains('ehs-scene')){syncWearers(row,sceneSubjects(scene).characters);copyWearers(prior,row);}foldCard(row,'Action');updateCards();
+  }
+  function foldCard(card,kind){
+    if(card.dataset.card)return;
+    card.dataset.card=kind;uidFor(card);
+    const head=card.firstElementChild,oldRemove=head.querySelector('.btn-remove');
+    const fold=document.createElement('button');fold.type='button';fold.className='fold-toggle';fold.setAttribute('aria-expanded','true');
+    const body=document.createElement('div');body.id='body-'+uidFor(card);body.className='fold-content';fold.setAttribute('aria-controls',body.id);
+    fold.innerHTML='<span class="fold-arrow" aria-hidden="true"></span><span class="fold-number"></span><span class="fold-title"></span>';
+    head.classList.add('fold-head');head.replaceChildren(fold);if(oldRemove)head.append(oldRemove);
+    while(head.nextSibling)body.append(head.nextSibling);card.append(body);
+    if(kind==='Scene'||kind==='Action')mountRefs(card,head,body,false);
+    fold.onclick=()=>{
+      const close=fold.getAttribute('aria-expanded')==='true';fold.setAttribute('aria-expanded',String(!close));body.hidden=close;card.classList.toggle('folded',close);updateCards();
+    };
+  }
+  function writeHeader(card,number,title){
+    const head=card.querySelector(':scope > .fold-head');if(!head)return;
+    head.querySelector('.fold-number').textContent=card.dataset.card+' '+pad(number);
+    head.querySelector('.fold-title').textContent=title||'Untitled '+card.dataset.card.toLowerCase();
+    if(card.dataset.actionType){
+      let chip=head.querySelector('.fold-kind');if(!chip){chip=document.createElement('small');chip.className='fold-kind';head.querySelector('.fold-toggle').append(chip);}
+      chip.textContent=EHS_ACTION_TYPES[card.dataset.actionType].label;
+    }
+  }
+  function updateCards(){
+    const scenes=currentScenes();
+    const envs=document.querySelectorAll('#env-list > .env-block');envs.forEach((e,i)=>{
+      const val=e.querySelector('input[id^="env-loc-"][type="hidden"]')?.value;
+      writeHeader(e,i+1,val==='Other'?fieldValue(e,'[id^="env-loc-other-"]'):val||fieldValue(e,'[id^="env-desc-"]'));
     });
-    ucWidget.onChange(function(val) {
-      uploadPending = !!val;
-      if (!val) { collectedUrls = []; document.getElementById('uc-file-list').innerHTML = ''; }
+    scenes.forEach((s,i)=>{
+      writeHeader(s,i+1,fieldValue(s,'.scene-title,.ehs-title'));
+      refreshRefCodes(s,'S'+pad(i+1));
+      s.querySelectorAll(actionSelector).forEach((a,j)=>{writeHeader(a,j+1,fieldValue(a,'.action-title'));refreshRefCodes(a,'S'+pad(i+1)+'_A'+pad(j+1));});
+      s.querySelectorAll('.theory-section').forEach((r,j)=>writeHeader(r,j+1,fieldValue(r,'.section-title')));
     });
   }
-
-  function getUploadedUrls() {
-    if(uploadPending) return Promise.reject(new Error('Please wait for reference uploads to finish, or remove the incomplete upload.'));
-    return Promise.resolve(collectedUrls);
+  const editors=new WeakMap(),fileForRecord=new WeakMap();
+  function mountRefs(owner,toolbar,body,general){
+    const state={entries:[],prefix:general?'BRIEF':'',general};
+    editors.set(owner,state);uidFor(owner);
+    const add=document.createElement('button');add.type='button';add.className='ref-add';add.textContent=general?'+ Add general reference':'+ Reference';
+    add.setAttribute('aria-label',general?'Add general reference':'Add reference to this '+owner.dataset.card.toLowerCase());
+    const file=document.createElement('input');file.type='file';file.multiple=true;file.hidden=true;if(!general)file.accept='image/*';
+    const list=document.createElement('div');list.className='ref-list';list.setAttribute('aria-live','polite');
+    state.list=list;toolbar.insertBefore(add,toolbar.querySelector('.btn-remove'));toolbar.append(file);body.prepend(list);
+    add.onclick=()=>file.click();
+    file.onchange=()=>{addRefFiles(owner,[...file.files]);file.value='';};
+  }
+  function addRefFiles(owner,files){
+    const state=editors.get(owner);
+    for(const f of files){
+      if(!state.general&&!/^image\//i.test(f.type)){showToast('Choose an image for a scene or action reference.',true);continue;}
+      const e={id:localUID(),file:f};state.entries.push(e);
+      const line=document.createElement('div');line.className='ref-file';
+      if(/^image\//i.test(f.type)){
+        const thumb=document.createElement('img');thumb.alt='';line.append(thumb);
+        if(typeof URL.createObjectURL==='function'){
+          const u=URL.createObjectURL(f);thumb.onload=thumb.onerror=()=>URL.revokeObjectURL(u);thumb.src=u;
+        }else{const reader=new FileReader();reader.onload=()=>{thumb.src=reader.result;};reader.readAsDataURL(f);}
+      }
+      const info=document.createElement('span'),label=document.createElement('strong'),original=document.createElement('small');original.textContent=f.name;
+      info.append(label,original);line.append(info);e.label=label;
+      const rm=document.createElement('button');rm.type='button';rm.className='btn-remove';rm.textContent='✕';rm.setAttribute('aria-label','Remove reference '+f.name);
+      rm.onclick=()=>{state.entries=state.entries.filter(other=>other!==e);line.remove();refreshRefCodes(owner,state.prefix);};
+      line.append(rm);state.list.append(line);
+    }
+    refreshRefCodes(owner,state.prefix);
+  }
+  function refreshRefCodes(owner,prefix){
+    const state=editors.get(owner);if(!state)return;state.prefix=prefix;
+    state.entries.forEach((e,i)=>{e.label.textContent=prefix+'_REF'+pad(i+1);});
+    const add=owner.querySelector(':scope > .fold-head .ref-add');
+    if(add)add.textContent=state.entries.length?'+ Reference ('+state.entries.length+')':'+ Reference';
+  }
+  function readRefs(owner){
+    const state=editors.get(owner);return (state?.entries||[]).map((e,i)=>{
+      const ref={id:e.id,ownerId:uidFor(owner),scope:state.general?'brief':owner.dataset.card.toLowerCase(),order:i+1,label:state.prefix+'_REF'+pad(i+1),originalName:e.file.name,mimeType:e.file.type};
+      fileForRecord.set(ref,e);return ref;
+    });
+  }
+  function initUploadcare(){const root=document.getElementById('brief-references');mountRefs(root,root.querySelector('.general-toolbar'),root.querySelector('.general-files'),true);}
+  // Upload only on submission, using the project’s delivery domain.
+  async function storeReference(entry){
+    if(entry.remote)return entry.remote;
+    if(PREVIEW_MODE)throw new Error('Local preview only.');
+    const publicKey=FORM_CONFIG.uploadcarePublicKey||window.UPLOADCARE_PUBLIC_KEY;
+    if(!entry.uploadId){
+      const form=new FormData();form.append('UPLOADCARE_PUB_KEY',publicKey);form.append('UPLOADCARE_STORE','1');form.append('file',entry.file,entry.file.name);
+      const response=await fetch('https://upload.uploadcare.com/base/',{method:'POST',body:form});
+      if(!response.ok)throw new Error('Upload failed ('+response.status+'). Retry submission.');
+      const answer=await response.json(),fileId=answer.file||answer[entry.file.name];
+      if(typeof fileId!=='string'||!/^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/i.test(fileId))throw new Error('The provider did not return a file ID.');
+      entry.uploadId=fileId;
+    }
+    const id=entry.uploadId;
+    // Resolve the project's real delivery origin once from the provider if the admin
+    // has not configured it. Retry domain lookup without re-uploading the file.
+    if(!FORM_CONFIG.referenceCdnBase){
+      const form=new FormData();form.append('pub_key',publicKey);form.append('files[0]',id);
+      const response=await fetch('https://upload.uploadcare.com/group/',{method:'POST',body:form});
+      if(!response.ok)throw new Error('Could not resolve the reference delivery domain ('+response.status+').');
+      const group=await response.json();const u=new URL(group.cdn_url);
+      if(u.protocol!=='https:'||u.username||u.password||!(u.hostname==='ucarecdn.com'||u.hostname.endsWith('.ucarecd.net')))throw new Error('Configure REFERENCE_CDN_BASE for this custom delivery domain.');
+      FORM_CONFIG.referenceCdnBase=u.origin;
+    }
+    const origin=new URL(FORM_CONFIG.referenceCdnBase);
+    if(origin.protocol!=='https:'||origin.username||origin.password||origin.pathname!=='/'||origin.search||origin.hash)throw new Error('Invalid reference delivery domain.');
+    return entry.remote={providerId:id,url:new URL('/'+id+'/',origin).href};
+  }
+  async function finalizeReferences(data){
+    const scenes=data.ehs?data.ehs.scenes:data.environments.flatMap(e=>e.scenes);
+    const refs=[...data.references,...scenes.flatMap(s=>[...s.references,...s.actions.flatMap(a=>a.references)])];
+    for(const r of refs){try{Object.assign(r,await storeReference(fileForRecord.get(r)));}catch(err){throw new Error(r.label+': '+err.message);}}
+    if(data.references.length)data.photoUrls=data.references.map(r=>r.url);
   }
 
   /* ─── Intro animation ─── */
@@ -3318,6 +3284,90 @@
     overlay.addEventListener('click', dismiss);
   })();
 
+  function escapeField(text){return String(text).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+  function fieldValue(root,selector){return root.querySelector(selector)?.value.trim() || '';}
+  function packActionResources(root){
+    return {
+      products:[...root.querySelectorAll('.product-row')].map(row=>({name:fieldValue(row,'.action-product-input'),sku:fieldValue(row,'.action-sku')})),
+      tools:readTools(root.querySelector('.action-tools-editor')),
+      ehs:Object.fromEntries(['gloves','mask','goggles'].map(k=>[k,fieldValue(root,'.action-'+k)])),
+      dispenser:root.querySelector('.action-dispenser-cb').checked ? {type:fieldValue(root,'.action-dispenser')} : null,
+      dilution:root.querySelector('.action-dilution-cb').checked ? {instructions:fieldValue(root,'.action-dilution')} : null
+    };
+  }
+  function addProduct(button){
+    const list=button.closest('.products-editor').querySelector('.products-list');
+    const row=document.createElement('div');row.className='product-row';
+    row.innerHTML=`<div class="field"><label>Product</label><div class="search-wrap"><input type="text" class="action-product-input" aria-label="Product" autocomplete="off" placeholder="Search by name or SKU, or enter a name" oninput="this.closest('.product-row').querySelector('.action-sku').value='';filterActionProductDropdown(this)" onfocus="showDropdown(this.parentElement)" onblur="hideDropdown(this.parentElement)"><div class="search-dropdown"></div></div></div>
+    <div class="field"><label>SKU</label><input type="text" class="action-sku" aria-label="Product SKU" placeholder="Auto-filled or enter SKU"></div>
+    <button type="button" class="btn-remove" aria-label="Remove product" onclick="this.closest('.product-row').remove()">✕</button>`;
+    list.appendChild(row);return row;
+  }
+  function resourcesHTML(){
+    const select=(k,label,options)=>`<div class="field"><label>${label}<select class="action-${k}" aria-label="${label}"><option value="">Not specified</option>${options.map(v=>'<option>'+v+'</option>').join('')}</select></label></div>`;
+    const toggle=(k,label,hint)=>`<div class="field"><label class="ehs-toggle"><input type="checkbox" class="action-${k}-cb" onchange="this.closest('.field').querySelector('.optional-detail').hidden=!this.checked"> ${label}</label><input type="text" class="optional-detail action-${k}" aria-label="${label} details" placeholder="${hint}" hidden></div>`;
+    return `<div class="action-resources"><div class="products-editor"><div class="resource-title">Products</div><div class="products-list"></div><button type="button" class="btn-ghost" onclick="addProduct(this)">+ Add product</button></div>
+    ${toolEditorHTML('action')}<div class="action-ehs"><div class="resource-title">EHS / PPE</div><div class="field-grid col-3">${select('gloves','Gloves',['Yes — Nitrile','Yes — Latex','Yes — Rubber','No'])}${select('mask','Mask',['Yes — Surgical','Yes — FFP2/N95','Yes — Full face','No'])}${select('goggles','Safety goggles',['Yes','No'])}</div>${briefType==='EHS'?'<div class="wearers"></div>':''}</div>
+    <div class="field-grid col-2">${toggle('dispenser','Dispenser used?','Dispenser type')}${toggle('dilution','Dilution required?','Dilution instructions')}</div></div>`;
+  }
+  function copyActionResources(prior,next){
+    if(!prior)return;
+    const d=packActionResources(prior);
+    d.products.forEach(p=>{const row=addProduct(next.querySelector('.products-editor button'));row.querySelector('.action-product-input').value=p.name;row.querySelector('.action-sku').value=p.sku;});
+    const editor=next.querySelector('.action-tools-editor');
+    prior.querySelectorAll('.tool-row').forEach(old=>{
+      addDetailedTool(editor.querySelector('.btn-ghost'));const row=editor.querySelector('.tools-list').lastElementChild;
+      for(const selector of ['.tool-name','.tool-other','.tool-cloth','.tool-specifications'])row.querySelector(selector).value=old.querySelector(selector).value;
+      updateToolEntry(row.querySelector('.tool-name'));
+    });
+    Object.entries(d.ehs).forEach(([k,v])=>next.querySelector('.action-'+k).value=v);
+    for(const [k,v] of [['dispenser',d.dispenser],['dilution',d.dilution]])if(v){
+      next.querySelector('.action-'+k+'-cb').checked=true;const input=next.querySelector('.action-'+k);input.hidden=false;input.value=v.type||v.instructions||'';
+    }
+  }
+  function cleanActionNumbers(){updateCards();}
+  function toolRowHTML(){return `<div class="tool-row"><div class="field"><label>Tool</label><select aria-label="Tool" class="tool-name" onchange="updateToolEntry(this)"><option value="">Select tool...</option>${TOOLS.map(t=>`<option>${escapeField(t)}</option>`).join('')}</select><input type="text" class="tool-other" hidden placeholder="Specify tool name" aria-label="Other tool name"></div><div class="field"><label>Tool specifications</label><textarea aria-label="Tool specifications" class="tool-specifications" rows="2" placeholder="e.g. Long handle, stiff nylon bristles"></textarea></div><div class="field tool-colour" hidden><label>Cloth color <span class="req">*</span></label><select aria-label="Cloth color" class="tool-cloth"><option value="">Select color...</option><option>Red</option><option>Blue</option><option>Green</option><option>Yellow</option></select></div><button type="button" class="btn-remove" aria-label="Remove tool" onclick="this.closest('.tool-row').remove()">✕</button></div>`;}
+  function toolEditorHTML(){return '<div class="tools-editor action-tools-editor"><div class="resource-title">Tools</div><div class="tools-list"></div><button type="button" class="btn-ghost" onclick="addDetailedTool(this)">+ Add tool</button></div>';}
+  function addDetailedTool(button){button.closest('.tools-editor').querySelector('.tools-list').insertAdjacentHTML('beforeend',toolRowHTML());}
+  function updateToolEntry(select){const row=select.closest('.tool-row'),cloth=select.value==='Microfiber cloth';row.querySelector('.tool-other').hidden=select.value!=='Other';row.querySelector('.tool-colour').hidden=!cloth;row.querySelector('.tool-cloth').required=cloth;}
+  function readTools(root){return [...root.querySelectorAll('.tool-row')].map(row=>({name:row.querySelector('.tool-name').value==='Other'?fieldValue(row,'.tool-other'):fieldValue(row,'.tool-name'),specifications:fieldValue(row,'.tool-specifications'),clothColor:row.querySelector('.tool-name').value==='Microfiber cloth'?fieldValue(row,'.tool-cloth'):''}));}
+  function validateResources(scene){
+    for(const a of scene.actions){
+      const prefix='Action '+a.order+': ';
+      if(a.characterEquipment?.some(c=>[...c.equipment,...(c.comparisonEquipment?.positive||[]),...(c.comparisonEquipment?.negative||[])].some(v=>!v)))return prefix+'complete the equipment for each selected character.';
+      if(a.products.some(p=>!p.name))return prefix+'name the product or remove its entry.';
+      for(const t of a.tools){if(!t.name)return prefix+'select a tool or remove its entry.';if(t.name==='Microfiber cloth'&&!t.clothColor)return prefix+'select a cloth color for each microfiber cloth.';}
+    }
+    return null;
+  }
+  function sceneTheoryHTML(){return '<div class="scene-theory" hidden><div class="resource-title">Sections</div><div class="sections-list"></div><button type="button" class="btn-ghost" onclick="addTheorySection(this)">+ Add section</button></div>';}
+  function addTheorySection(btn){
+    const list=btn.closest('.scene-theory').querySelector('.sections-list'),row=document.createElement('div');row.className='theory-section action-block';
+    row.innerHTML=`<div class="action-head"><span class="action-label"></span><button type="button" class="btn-remove" aria-label="Remove section" onclick="const l=this.closest('.sections-list');this.closest('.theory-section').remove();cleanSectionNumbers(l)">✕</button></div>
+    <div class="field"><label>Section title <span class="req">*</span><input type="text" class="section-title" placeholder="Name the point covered here"></label></div>
+    <div class="field"><label>Section content <span class="req">*</span></label><textarea class="theory-content" aria-label="Section content" rows="4" placeholder="What should the learner understand?"></textarea></div>
+    <div class="field"><label>Visual description <span class="req">*</span></label><textarea class="theory-visual" aria-label="Section visual description" rows="3" placeholder="What should appear on screen for this point?"></textarea></div>
+    <div class="field-grid col-2"><div class="field"><label>On-screen text (optional)</label><input type="text" aria-label="On-screen text" class="theory-text" placeholder="Short emphasis in English"></div><div class="field"><label>On-screen graphics (optional)</label><input type="text" aria-label="On-screen graphics" class="theory-graphics" placeholder="e.g. Diagram, icons, comparison"></div></div>`;
+    list.appendChild(row);foldCard(row,'Section');updateCards();
+  }
+  function cleanSectionNumbers(){updateCards();}
+  function readSections(scene){return [...scene.querySelectorAll('.theory-section')].map((r,i)=>({order:i+1,title:fieldValue(r,'.section-title'),content:fieldValue(r,'.theory-content'),visualDescription:fieldValue(r,'.theory-visual'),onScreenText:fieldValue(r,'.theory-text'),onScreenGraphics:fieldValue(r,'.theory-graphics')}));}
+  function validateSections(scene){if(!scene.sections.length)return 'Add at least one section.';const s=scene.sections.find(x=>!x.title||!x.content||!x.visualDescription);return s?'Section '+s.order+': enter the title, content and visual description.':null;}
+  function attachSceneMode(scene){scene.dataset.contentType='practical';const row=document.createElement('div');row.className='scene-mode';row.innerHTML='<span>Scene format</span><div role="group" aria-label="Scene format"><button type="button" aria-pressed="true" onclick="setSceneMode(this,\'practical\')">Practical</button><button type="button" aria-pressed="false" onclick="setSceneMode(this,\'theoretical\')">Theoretical</button></div>';scene.querySelector('.scene-head').after(row);}
+  function setSceneMode(button,mode){const scene=button.closest('.scene-block');scene.dataset.contentType=mode;scene.querySelector('.scene-theory').hidden=mode!=='theoretical';scene.querySelector('.scene-practical').hidden=mode==='theoretical';if(mode==='theoretical'&&!scene.querySelector('.theory-section'))addTheorySection(scene.querySelector('.scene-theory > .btn-ghost'));scene.querySelectorAll('.scene-mode button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));}
+
+  function outlineRows(data){
+    const scenes=data.briefType==='EHS'?data.ehs.scenes:data.environments.flatMap(e=>e.scenes);
+    return scenes.flatMap((s,i)=>[['Scene '+(i+1),s.title,'',''],...(s.contentType==='theoretical'?s.sections:s.actions).map(x=>s.contentType==='theoretical'?['Section '+x.order,'','',x.title]:['Action '+x.order,'',x.title,''])]);
+  }
+  function refreshOutline(){
+    const body=document.querySelector('#sheet-outline tbody');body.replaceChildren();
+    for(const values of outlineRows(collectData())){const row=body.insertRow();for(const v of values)row.insertCell().textContent=v;}
+  }
+  for(const event of ['input','change','click'])document.addEventListener(event,()=>{if(document.getElementById('sheet-outline').open)refreshOutline();});
+
+  document.addEventListener('input',e=>{if(e.target.closest('.scene-cast'))syncCast(e.target.closest('.scene-block'));if(e.target.matches('.action-title,.ehs-title,.scene-title,.section-title,[id^="env-loc-other-"],[id^="env-desc-"]'))updateCards();});
+  document.addEventListener('click',e=>{if(e.target.closest('.btn-remove,[data-brief-type]'))updateCards();});
   /* ─── Init ─── */
   document.getElementById('f-date').value = new Date().toISOString().split('T')[0];
   try { initUploadcare(); } catch (e) { console.warn('Uploadcare widget unavailable:', e); }
