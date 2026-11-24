@@ -1002,7 +1002,7 @@ input[type="checkbox"]:focus-visible,.fold-toggle:focus-visible,.ref-add:focus-v
 
 <div class="page">
   <div class="page-header">
-    <div class="eyebrow">Production Brief / v4.6</div>
+    <div class="eyebrow">Production Brief / v4.6.1</div>
     <h1>Training video <em>brief</em> generator</h1>
     <p>Choose a brief type, describe the training, and build your scenes.</p>
     <div class="meta-row">
@@ -1019,7 +1019,7 @@ input[type="checkbox"]:focus-visible,.fold-toggle:focus-visible,.ref-add:focus-v
       <button type="button" class="brief-type type-hospitality" data-brief-type="Hospitality" aria-pressed="true" onclick="selectMainBriefType('Hospitality')"><strong>Hospitality<svg class="brief-type-decor brief-type-stars" viewBox="0 0 166 30" aria-hidden="true" focusable="false" fill="currentColor"><polygon points="15,1 19.1,10.3 29.2,11.3 21.6,18 23.8,28 15,22.9 6.2,28 8.4,18 0.8,11.3 10.9,10.3" transform="translate(0 0)"/><polygon points="15,1 19.1,10.3 29.2,11.3 21.6,18 23.8,28 15,22.9 6.2,28 8.4,18 0.8,11.3 10.9,10.3" transform="translate(34 0)"/><polygon points="15,1 19.1,10.3 29.2,11.3 21.6,18 23.8,28 15,22.9 6.2,28 8.4,18 0.8,11.3 10.9,10.3" transform="translate(68 0)"/><polygon points="15,1 19.1,10.3 29.2,11.3 21.6,18 23.8,28 15,22.9 6.2,28 8.4,18 0.8,11.3 10.9,10.3" transform="translate(102 0)"/><polygon points="15,1 19.1,10.3 29.2,11.3 21.6,18 23.8,28 15,22.9 6.2,28 8.4,18 0.8,11.3 10.9,10.3" transform="translate(136 0)"/></svg></strong><small>Hotels, departments &amp; guest spaces</small></button>
       <button type="button" class="brief-type type-healthcare" data-brief-type="Healthcare" aria-pressed="false" onclick="selectMainBriefType('Healthcare')"><svg class="brief-type-decor brief-type-medical" viewBox="0 0 72 112" aria-hidden="true" focusable="false" fill="none"><path d="M36 10V103" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/><circle cx="36" cy="9" r="5" fill="currentColor"/><path d="M47 21C63 26 59 39 40 43C18 47 15 60 35 65C54 70 51 82 35 86C25 89 25 96 31 101" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><path d="M45 15C38 14 34 18 36 23C39 28 49 29 52 24C54 20 49 17 45 15Z" fill="currentColor"/></svg><strong>Healthcare</strong><small>Hospitals, clinics &amp; care environments</small></button>
       <button type="button" class="brief-type type-ehs" data-brief-type="EHS" aria-pressed="false" onclick="selectMainBriefType('EHS')"><span class="brief-type-decor brief-type-tape" aria-hidden="true"></span><strong>EHS</strong><small>Hazards, safe behaviours &amp; workplace training</small></button>
-    <button type="button" class="brief-type type-kitchen" data-brief-type="Industrial Kitchen Hygiene" aria-pressed="false" onclick="selectMainBriefType('Industrial Kitchen Hygiene')"><strong>Industrial Kitchen Hygiene</strong><small>Industrial Kitchen Hygiene</small></button>
+    <button type="button" class="brief-type type-kitchen" data-brief-type="Industrial Kitchen Hygiene" aria-pressed="false" onclick="selectMainBriefType('Industrial Kitchen Hygiene')"><strong>Industrial Kitchen Hygiene</strong><small>Endüstriyel Mutfak Hijyeni Eğitimi</small></button>
     </div>
     <p class="hint">Switch types at any time. Your entries stay available while this page remains open.</p>
   </div>
@@ -1141,17 +1141,17 @@ input[type="checkbox"]:focus-visible,.fold-toggle:focus-visible,.ref-add:focus-v
   <div class="section" id="cleaning-before-after-section">
     <div class="section-head"><div class="num">4</div><h2>Before &amp; after cleaning</h2><span class="step-label">Step 4 / 6</span></div>
     <div class="section-body">
-      <p class="hint" style="margin-bottom:14px;">Add at least one step to each section. Add as many steps as the procedure needs. These use standard visuals in production.</p>
+      <p class="hint" style="margin-bottom:14px;">Choose the actions that apply, or select None in either list. Only selected actions use standard visuals in production.</p>
       <div class="field-grid col-2" style="gap:20px;">
         <div class="field">
           <label>Before you start <span class="req">*</span></label>
           <div id="before-list" style="margin-bottom:8px;"></div>
-          <button type="button" class="btn-ghost" onclick="addBeforeAfterRow('before')">+ Add before action</button>
+          <button type="button" class="btn-ghost" id="before-add" onclick="addBeforeAfterRow('before')">+ Add before action</button>
         </div>
         <div class="field">
           <label>After you finish <span class="req">*</span></label>
           <div id="after-list" style="margin-bottom:8px;"></div>
-          <button type="button" class="btn-ghost" onclick="addBeforeAfterRow('after')">+ Add after action</button>
+          <button type="button" class="btn-ghost" id="after-add" onclick="addBeforeAfterRow('after')">+ Add after action</button>
         </div>
       </div>
     </div>
@@ -1212,7 +1212,7 @@ input[type="checkbox"]:focus-visible,.fold-toggle:focus-visible,.ref-add:focus-v
 
   <div class="page-footer">
     <span>Diversey Value Academy · Production tooling</span>
-    <span>Brief Generator v4.6</span>
+    <span>Brief Generator v4.6.1</span>
   </div>
 </div>
 
@@ -1229,7 +1229,7 @@ input[type="checkbox"]:focus-visible,.fold-toggle:focus-visible,.ref-add:focus-v
 </div>
 
 <script id="va-brief-app">
-  // HTML 4.6 uses the matching Apps Script deployment.
+  // HTML 4.6.1 uses the matching Apps Script deployment.
   // Apps Script supplies these values automatically when hosting this page.
   const FORM_CONFIG = window.DIVERSEY_CONFIG || {preview:true};
   const WEBHOOK_URL = FORM_CONFIG.endpoint || '';
@@ -1771,7 +1771,27 @@ input[type="checkbox"]:focus-visible,.fold-toggle:focus-visible,.ref-add:focus-v
   var BEFORE_OPTIONS = ['Wear latex gloves', 'Wear nitrile gloves', 'Wash your hands', 'Wear a mask', 'Wear safety goggles', 'Check that all products and tools are available'];
   var AFTER_OPTIONS = ['Discard gloves', 'Wash your hands', 'Discard microfiber cloths', 'Discard mask', 'Dispose of used materials properly'];
 
+  const NO_STANDARD_ACTION = '__none__';
+  function hasNoStandardActions(kind) {
+    return Array.from(document.querySelectorAll('#'+kind+'-list select')).some(s => s.value === NO_STANDARD_ACTION);
+  }
+  function syncStandardActions(kind) {
+    const selects = Array.from(document.querySelectorAll('#'+kind+'-list select'));
+    const none = selects.find(s => s.value === NO_STANDARD_ACTION);
+    for (const s of selects) {
+      const paused = Boolean(none && s !== none);
+      s.disabled = paused;
+      s.parentElement.style.display = paused ? 'none' : 'flex';
+    }
+    document.getElementById(kind+'-add').disabled = Boolean(none);
+  }
+  function removeStandardAction(button, kind) {
+    button.parentElement.remove();
+    if (!document.getElementById(kind+'-list').children.length) addBeforeAfterRow(kind);
+    syncStandardActions(kind);
+  }
   function addBeforeAfterRow(kind) {
+    if (hasNoStandardActions(kind)) return;
     const opts = (kind === 'before' ? BEFORE_OPTIONS : AFTER_OPTIONS)
       .map(o => `<option>${o}</option>`).join('');
     const list = document.getElementById(kind + '-list');
@@ -1779,13 +1799,14 @@ input[type="checkbox"]:focus-visible,.fold-toggle:focus-visible,.ref-add:focus-v
     row.className = kind + '-item-row';
     row.style.cssText = 'display:flex;gap:8px;align-items:center;margin-bottom:6px;';
     row.innerHTML = `
-      <select class="${kind}-item-select" style="flex:1;">
-        <option value="">Select an action...</option>${opts}
+      <select class="${kind}-item-select" aria-label="${kind === 'before' ? 'Before you start' : 'After you finish'} action" onchange="syncStandardActions('${kind}')" style="flex:1;">
+        <option value="">Select an action...</option><option value="${NO_STANDARD_ACTION}">None</option>${opts}
       </select>
-      <button type="button" class="btn-remove" onclick="this.closest('.${kind}-item-row').remove()" style="flex-shrink:0;">✕</button>`;
+      <button type="button" class="btn-remove" onclick="removeStandardAction(this, '${kind}')" style="flex-shrink:0;">✕</button>`;
     list.appendChild(row);
   }
   function getBeforeAfterItems(kind) {
+    if (hasNoStandardActions(kind)) return [];
     return [...document.querySelectorAll(`#${kind}-list .${kind}-item-select`)]
       .map(s => s.value).filter(Boolean);
   }
@@ -1877,6 +1898,8 @@ input[type="checkbox"]:focus-visible,.fold-toggle:focus-visible,.ref-add:focus-v
 
       beforeActions: getBeforeAfterItems('before'),
       afterActions: getBeforeAfterItems('after'),
+      ...(briefType !== 'EHS' && hasNoStandardActions('before') ? {beforeActionsNone:true} : {}),
+      ...(briefType !== 'EHS' && hasNoStandardActions('after') ? {afterActionsNone:true} : {}),
 
       donts: document.getElementById('f-donts').value,
       notes: document.getElementById('f-notes').value,
@@ -1914,7 +1937,9 @@ input[type="checkbox"]:focus-visible,.fold-toggle:focus-visible,.ref-add:focus-v
         const incomplete=scene.actions.find(action=>!action.title);if(incomplete)return prefix+'enter a title for Action '+incomplete.order+'.';
       }
     }
-    if (!data.beforeActions.length || !data.afterActions.length) return 'Add at least one Before you start and one After you finish step.';
+    for (const [key, label] of [['before','Before you start'], ['after','After you finish']]) {
+      if (!data[key+'Actions'].length && data[key+'ActionsNone'] !== true) return label + ': select an action or choose None.';
+    }
     if (!data.disclaimer) return 'Disclaimer is required.';
     return null;
   }
